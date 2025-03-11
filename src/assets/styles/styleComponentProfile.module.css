@@ -1,0 +1,125 @@
+.responsive-web {
+  @media (max-width: 500px) {
+    margin: 1rem;
+    margin-top: 89px;
+    .profile {
+      border: 2px solid gray;
+    }
+    .badged {
+      background-color: white;
+      color: black;
+      width: 37%;
+      border-radius: 2rem;
+      margin: 1%;
+      text-align: left;
+      font-weight: bold;
+      font-size: small;
+      padding: 0.1rem;
+      padding-left: 0.5rem;
+      padding-right: 0.3rem;
+      transition: 0.4s ease;
+      cursor: pointer;
+    }
+    .badged:hover {
+      background-color: rgb(206, 203, 203);
+    }
+    .Nombre {
+      color: white;
+      font-size: 2.5rem;
+    }
+    .flecha {
+      margin-left: 10px;
+    }
+    .Desp1 {
+      color: rgb(197, 197, 197);
+      font-size: 1.3rem;
+    }
+    .Desp2 {
+      color: rgb(197, 197, 197);
+      font-size: 1.1rem;
+    }
+    .VerProyectos {
+      display: inline-block;
+      width: 10rem;
+      background-color: white;
+      text-align: center;
+      padding: 0.5rem 0.4rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      color: black;
+      transition: 0.4s ease;
+    }
+    .VerProyectos:hover {
+      background-color: rgb(214, 214, 214);
+    }
+    .ContactoProfile {
+      margin-left: 22px;
+      border: 1px solid rgb(53, 53, 53);
+      padding: 0.60rem 1rem;
+      border-radius: 0.5rem;
+      color: white;
+      transition: 0.3s ease;
+    }
+    .ContactoProfile:hover {
+      background-color: rgb(37, 37, 37);
+    }
+    .back {
+      display: flex;
+    }
+    .githubProfile {
+      width: 1.3rem;
+      margin-top: 20px;
+      transition: 0.5s ease;
+      padding: 0.5rem;
+      border-radius: 10%;
+    }
+    .githubProfile:hover {
+      background-color: rgb(39, 39, 39);
+    }
+    .linkedinProfile {
+      width: 1.3rem;
+      margin-left: 10px;
+      margin-top: 20px;
+      transition: 0.5s ease;
+      padding: 0.5rem;
+      border-radius: 10%;
+    }
+    .linkedinProfile:hover {
+      background-color: rgb(39, 39, 39);
+    }
+    .emailProfile {
+      width: 1.3rem;
+      padding: 0.5rem;
+      margin-top: 20px;
+      margin-left: 10px;
+      transition: 0.5s ease;
+      border-radius: 10%;
+    }
+    .emailProfile:hover {
+      background-color: rgb(39, 39, 39);
+    }
+    .Dylan {
+      border-radius: 100%;
+      padding: 2rem 5rem;
+      justify-items: center;
+      border: 5px solid rgb(68, 68, 68);
+      margin-top: 20px;
+      margin-left: 70px;
+      width: 7rem;
+      height: 13.5rem;
+      overflow: hidden;
+      position: relative;
+    }
+    .dylan {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    
+  }
+}
