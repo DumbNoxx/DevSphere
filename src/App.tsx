@@ -1,5 +1,5 @@
 import { Profile } from "./components/Profile";
-import inicio from "./assets/styles/styleComponentProfile.module.css";
+import inicio from "./assets/styles/Profile.module.css";
 
 export const App = () => {
   return (

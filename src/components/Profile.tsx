@@ -1,4 +1,4 @@
-import inicio from "../assets/styles/styleComponentProfile.module.css";
+import inicio from "../assets/styles/Profile.module.css";
 import github from "../assets/images/svg/github.svg";
 import linkedin from "../assets/images/svg/linkedin.svg";
 import email from "../assets/images/svg/mail.svg";
