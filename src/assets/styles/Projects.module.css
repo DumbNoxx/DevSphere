@@ -17,7 +17,7 @@
       overflow: hidden;
       position: relative;
     }
-    .test {
+    .inventech {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -25,6 +25,94 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+    .desProject {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    .badged1 {
+      position: relative;
+      background-color: white;
+      color: black;
+      padding: 0.3rem 0.5rem;
+      border-radius: 1rem;
+      font-size: 0.7rem;
+      font-weight: bold;
+      transition: 0.4s ease;
+    }
+    .badged1:hover {
+      background-color: rgb(206, 203, 203);
+      cursor: pointer;
+    }
+    .titleDes {
+      color: white;
+      font-size: 1.4rem;
+    }
+    .desDesp {
+      color: rgb(197, 197, 197);
+    }
+    .badgedDes {
+      border: 1px solid rgb(49, 49, 49);
+      padding: 0.3rem 0.5rem;
+      border-radius: 0.8rem;
+      font-size: 0.8rem;
+      transition: 0.4s ease;
+      margin-right: 10px;
+    }
+    .badgedDes a {
+      color: white;
+    }
+    .badgedDes:hover {
+      cursor: pointer;
+      background-color: rgb(34, 34, 34);
+    }
+    .links1 {
+      display: flex;
+    }
+    .links1 div{
+      margin-right: 10px;
+    }
+    .CodigoProject1 {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .codigoProject1 {
+      border: 1px solid rgb(29, 29, 29);
+      display: flex;
+      align-items: center;
+      color:white;
+      padding: 0.4rem 0.5rem;
+      border-radius: 0.5rem;
+      transition: 0.4s ease;
+    }
+    .codigoProject1:hover {
+      background-color: rgb(34, 34, 34);
+    }
+    .codigoProject1 div{
+      margin-right: 10px;
+    }
+    .codigoProject1 div img{
+      display: block;
+      width: 17px;
+    }
+    .enlace {
+      margin-top: 20px;
+      background-color: white;
+      border-radius: 0.5rem;
+      padding: 0.1rem 0.5rem 0.2rem 0.5rem;
+      transition: 0.4s ease;
+    }
+    .flecha {
+      margin-left: 1px;
+      font-size: 25px;
+    }
+    .enlace:hover {
+      background-color: rgb(214, 214, 214);
+      cursor: pointer;
+    }
+    .enlace a {
+      color: black;
     }
   }
 }
