@@ -1,9 +1,44 @@
+/* Skill.module.css */
 .responsive-web {
+  font-family: "Courier New", Courier, monospace;
   @media (max-width: 500px) {
     padding: 1rem;
     .title {
       font-size: 2rem;
       color: white;
+    }
+    .des {
+      color: rgb(197, 197, 197);
+      margin-bottom: 2rem;
+    }
+    .gridContainer {
+      color: white;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+      gap: 1rem; /* Espacio entre los elementos */
+      width: 100%; /* Asegura que el grid no se desborde */
+      max-width: 100%; /* Limita el ancho del grid */
+      margin: 0 auto; /* Centra el grid */
+    }
+    .container {
+      display: flex;
+      align-items: center; /* Alinea los elementos verticalmente */
+      gap: 0.5rem;
+      padding: 0.75rem; /* Aumenta el padding para mejor espaciado */
+      border: 1px solid rgb(44, 44, 44);
+      border-radius: 0.5rem;
+    }
+    .circle {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background-color: white;
+      margin: auto 0;
+    }
+    .arra {
+      font-size: 0.875rem;
+      color: white;
+      margin: auto 0;
     }
   }
 }
