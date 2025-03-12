@@ -12,8 +12,10 @@ export const skillsHook = () => {
       {id: 7, nombre: "PostgreSQL"},
     ]
     const [array, setArray] = useState(listadoSkill);
+    setArray;
     return [
       array,
+      
     ]
 }
 
