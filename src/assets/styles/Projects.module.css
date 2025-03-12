@@ -1,0 +1,30 @@
+.responsive-web {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 1rem;
+  @media (max-width: 500px) {
+    .title {
+      font-size: 2rem;
+      color: white;
+    }
+    .desp {
+      transform: translateY(-50%);
+      font-size: 0.87rem;
+      color: rgb(197, 197, 197);
+    }
+    .borderImg {
+      height: 16rem;
+      border-radius: 1rem;
+      overflow: hidden;
+      position: relative;
+    }
+    .test {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
