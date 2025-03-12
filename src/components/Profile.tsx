@@ -27,17 +27,17 @@ export const Profile = () => {
             </a>
           </div>
           <div className={inicio.back}>
-            <a href="#" target="_blank">
+            <a href="https://github.com/DumbNoxx" target="_blank">
               <img src={github} alt="github" className={inicio.githubProfile} />
             </a>
-            <a href="#" target="_blank">
+            <a href="https://www.linkedin.com/in/dylan-marcano-994205266" target="_blank">
               <img
                 src={linkedin}
                 alt="linkedin"
                 className={inicio.linkedinProfile}
               />
             </a>
-            <a href="#" target="_blank">
+            <a href="#">
               <img src={email} alt="email" className={inicio.emailProfile} />
             </a>
           </div>
