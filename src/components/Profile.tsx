@@ -3,6 +3,7 @@ import github from "../assets/images/svg/github.svg";
 import linkedin from "../assets/images/svg/linkedin.svg";
 import email from "../assets/images/svg/mail.svg";
 import dylan from "../assets/images/dylan.jpeg";
+import arrow from "../assets/images/svg/arrow-right.svg";
 
 export const Profile = () => {
   return (
@@ -20,7 +21,8 @@ export const Profile = () => {
           </p>
           <div>
             <a href="#" className={inicio.VerProyectos}>
-              Ver proyectos <span className={inicio.flecha}>→</span>
+              Ver proyectos 
+              <img src={arrow} alt="flecha" />
             </a>
             <a href="#" className={inicio.ContactoProfile}>
               Contacto

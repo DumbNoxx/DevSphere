@@ -1,0 +1,9 @@
+.responsive-web {
+  @media (max-width: 500px) {
+    padding: 1rem;
+    .title {
+      font-size: 2rem;
+      color: white;
+    }
+  }
+}

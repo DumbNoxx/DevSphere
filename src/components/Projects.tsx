@@ -1,7 +1,7 @@
 import projects from "../assets/styles/Projects.module.css";
 import inventech from "../assets/images/inventech.png";
 import github from "../assets/images/svg/github.svg";
-
+import arrow from "../assets/images/svg/arrow-right.svg";
 export const Projects = () => {
   return (
     <>
@@ -51,9 +51,10 @@ export const Projects = () => {
                   Codigo
                 </a>
               </div>
-              <div className={projects.enlace}>
+              <div >
                 <a href="#" className={projects.VerProyectos}>
-                  Ver proyecto <span className={projects.flecha}>→</span>
+                  Ver proyecto
+                  <img src={arrow} alt="" />
                 </a>
               </div>
             </div>

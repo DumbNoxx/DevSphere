@@ -1,7 +1,7 @@
 .responsive-web {
   font-family: 'Courier New', Courier, monospace;
-  padding: 1rem;
   @media (max-width: 500px) {
+    padding: 1rem;
     .title {
       font-size: 2rem;
       color: white;
@@ -96,23 +96,28 @@
       display: block;
       width: 17px;
     }
-    .enlace {
+    .VerProyectos {
       margin-top: 20px;
+      display: flex; 
+      justify-content: center;
+      align-items: center; 
+      width: 10rem;
       background-color: white;
+      padding: 0.5rem 0.4rem;
       border-radius: 0.5rem;
-      padding: 0.1rem 0.5rem 0.2rem 0.5rem;
+      font-size: 1rem;
+      color: black;
       transition: 0.4s ease;
     }
-    .flecha {
-      margin-left: 1px;
-      font-size: 25px;
+    .VerProyectos img {
+      width: 15px; 
+      margin-left: 0.5rem; 
+      position: relative;
+      top: 0.2px;
     }
-    .enlace:hover {
+    .VerProyectos:hover {
       background-color: rgb(214, 214, 214);
       cursor: pointer;
-    }
-    .enlace a {
-      color: black;
     }
   }
 }
