@@ -55,7 +55,7 @@
     .ContactoProfile {
       margin-left: 22px;
       border: 1px solid rgb(53, 53, 53);
-      padding: 0.60rem 1rem;
+      padding: 0.6rem 1rem;
       border-radius: 0.5rem;
       color: white;
       transition: 0.3s ease;
@@ -115,11 +115,9 @@
       height: 100%;
       object-fit: cover;
       position: absolute;
-      top:50%;
-      left:50%;
+      top: 50%;
+      left: 50%;
       transform: translate(-50%, -50%);
     }
-    
-    
   }
 }
