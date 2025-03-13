@@ -10,6 +10,9 @@ export const skillsHook = () => {
       {id: 5, nombre: "Git"},
       {id: 6, nombre: "Bash"},
       {id: 7, nombre: "PostgreSQL"},
+      {id: 8, nombre: "React"},
+      {id: 9, nombre: "Node.JS"},
+
     ]
     const [array, setArray] = useState(listadoSkill);
     setArray;

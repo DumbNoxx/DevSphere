@@ -1,0 +1,41 @@
+.responsive-web{
+  font-family: 'Courier New', Courier, monospace;
+  @media (max-width: 500px) {
+    .title{
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+    .des {
+      text-align: center;
+      color: rgb(197, 197, 197);
+    }
+    .emailContainer {
+      text-align: center;
+    }
+    .email{
+      display: flex;
+      background-color: white;
+      text-align: center;
+      width: 18rem;
+      margin: 0 auto;
+      padding: 0.5rem 0 0.5rem 0.6rem;
+      border-radius: 0.6rem;
+      transition: 0.4s ease;
+      font-size: 1rem;
+      font-weight: bold;
+      color: black;
+    }
+    .email img {
+      margin-right: 3px;
+      margin-bottom: 0;
+    }
+    .email:hover {
+      background-color: rgb(214, 214, 214);
+      cursor: pointer;
+    }
+    .iconEmail {
+      width: 1.3rem;
+    }
+  }
+}
