@@ -250,6 +250,7 @@
   @media (max-width: 500px) {
     font-family: "Courier New", Courier, monospace;
     padding: 1rem;
+    width: 29rem;
     .title {
       font-size: 2rem;
       color: white;
@@ -261,9 +262,11 @@
     }
     .borderImg {
       height: 16rem;
+      width: auto;
       border-radius: 1rem;
       overflow: hidden;
       position: relative;
+      min-height: 16rem
     }
     .inventech {
       width: 100%;
@@ -277,6 +280,7 @@
     .desProject {
       margin-top: 20px;
       margin-left: 20px;
+      width: 29rem;
     }
     .badged1 {
       position: relative;
@@ -298,6 +302,7 @@
     }
     .desDes {
       color: rgb(197, 197, 197);
+      width: 29rem;
     }
     .badgedDes {
       border: 1px solid rgb(49, 49, 49);

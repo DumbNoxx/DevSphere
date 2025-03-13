@@ -304,6 +304,7 @@
     .Nombre {
       color: white;
       font-size: 2.5rem;
+      width: 20rem;
     }
     .Desp1 {
       color: rgb(197, 197, 197);
@@ -313,6 +314,7 @@
     .Desp2 {
       color: rgb(197, 197, 197);
       font-size: 1.1rem;
+      width: 26rem;
     }
     .VerProyectos {
       display: inline-block;

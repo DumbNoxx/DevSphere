@@ -45,6 +45,7 @@
 
   @media (max-width: 768px) and (min-width: 501px) {
     padding: 2rem;
+    width: 43.8rem;
     .title {
       font-size: 2rem;
       color: white;
