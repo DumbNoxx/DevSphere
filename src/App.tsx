@@ -1,4 +1,5 @@
 import { Divider } from "./components/Divider";
+import { Footer } from "./components/Footer";
 import { FooterContacts } from "./components/FooterContacts";
 import { Profile } from "./components/Profile";
 import { Projects } from "./components/Projects";
@@ -8,21 +9,15 @@ export const App = () => {
   return (
     <>
       <div>
-        <div>
-          <Profile />
-        </div>
+        <Profile />
         <Divider />
-        <div>
-          <Projects />
-        </div>
+        <Projects />
         <Divider />
-        <div>
-          <Skills />
-        </div>
+        <Skills />
         <Divider />
-        <div>
-          <FooterContacts />
-        </div>
+        <FooterContacts />
+        <Divider />
+        <Footer />
       </div>
     </>
   );

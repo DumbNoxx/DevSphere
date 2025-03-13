@@ -1,5 +1,9 @@
 import constacts from "../assets/styles/FooterContacts.module.css";
 import email from "../assets/images/svg/mail-black.svg";
+import github from "../assets/images/svg/github.svg";
+import linkedin from "../assets/images/svg/linkedin.svg";
+import { Contact } from "lucide-react";
+
 export const FooterContacts = () => {
   return (
     <>
@@ -10,9 +14,31 @@ export const FooterContacts = () => {
           Contáctame y hablemos sobre cómo puedo ayudarte.
         </p>
         <div className={constacts.emailContainer}>
-          <a href="https://lucide.dev/icons/arrow-right" className={constacts.email}>
-          <img src={email} alt="email" className={constacts.iconEmail} />
+          <a
+            href="https://lucide.dev/icons/arrow-right"
+            className={constacts.email}
+          >
+            <img src={email} alt="email" className={constacts.iconEmail} />
             kevinmarcano0921@gmail.com
+          </a>
+        </div>
+        <div className={constacts.back}>
+          <a href="https://github.com/DumbNoxx" target="_blank">
+            <img
+              src={github}
+              alt="github"
+              className={constacts.githubProfile}
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/dylan-marcano-994205266"
+            target="_blank"
+          >
+            <img
+              src={linkedin}
+              alt="linkedin"
+              className={constacts.linkedinProfile}
+            />
           </a>
         </div>
       </div>

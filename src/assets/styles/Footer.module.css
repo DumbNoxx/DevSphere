@@ -1,0 +1,9 @@
+.responsive-web {
+  font-family: 'Courier New', Courier, monospace;
+  @media (max-width: 500px) {
+    .footer {
+      text-align: center;
+      color: rgb(197, 197, 197);
+    }
+  }
+}
