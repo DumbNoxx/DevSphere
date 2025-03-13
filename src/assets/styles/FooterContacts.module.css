@@ -149,8 +149,9 @@
   }
   @media (max-width: 500px) {
     font-family: "Courier New", Courier, monospace;
+    width: 21.8rem;
     .title {
-      width: 28rem;
+      width: 20rem;
       text-align: center;
       color: white;
       font-weight: bold;
@@ -158,10 +159,10 @@
     }
     .des {
       margin-top: 20px;
-      width: 28rem;
+      width: 20rem;
       text-align: center;
       color: rgb(197, 197, 197);
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       margin-bottom: 40px;
     }
     .emailContainer {

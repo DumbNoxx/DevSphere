@@ -87,6 +87,7 @@
   @media (max-width: 500px) {
     font-family: "Courier New", Courier, monospace;
     padding: 1rem;
+    width: 20rem;
     .title {
       font-size: 2rem;
       color: white;

@@ -6,9 +6,9 @@ import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 
 export const App = () => {
-document.body.style.overflowX = 'hidden';
+// document.body.style.overflowX = 'hidden';
 
-document.documentElement.style.overflowX = 'hidden';
+// document.documentElement.style.overflowX = 'hidden';
   
   return (
     <>

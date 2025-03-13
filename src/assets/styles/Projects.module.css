@@ -250,12 +250,14 @@
   @media (max-width: 500px) {
     font-family: "Courier New", Courier, monospace;
     padding: 1rem;
-    width: 29rem;
+    width: 20rem;
     .title {
-      font-size: 2rem;
+      font-size: 1.6rem;
       color: white;
+      width: 20rem;
     }
     .desp {
+      margin-top: 35px;
       transform: translateY(-50%);
       font-size: 0.87rem;
       color: rgb(197, 197, 197);
@@ -280,7 +282,7 @@
     .desProject {
       margin-top: 20px;
       margin-left: 20px;
-      width: 29rem;
+      width: 20rem;
     }
     .badged1 {
       position: relative;
@@ -302,7 +304,8 @@
     }
     .desDes {
       color: rgb(197, 197, 197);
-      width: 29rem;
+      width: 19rem;
+      font-size: 0.8rem;
     }
     .badgedDes {
       border: 1px solid rgb(49, 49, 49);

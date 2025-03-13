@@ -21,20 +21,20 @@
   }
   @media (max-width: 500px) {
     font-family: 'Courier New', Courier, monospace;
-   width: 27rem;
+   width: 21rem;
     margin-left: 2px;
     text-align: center;
     .footer {
       color: rgb(197, 197, 197);
       font-size: small;
       display:block;
-      width: 30rem;
+      width: 21rem;
       margin: 0 auto;
 
     }
     .footer p:last-of-type{
       font-size: small;
-      margin-left: 1rem;
+      margin-left: 1.5rem;
     }
   }
 }

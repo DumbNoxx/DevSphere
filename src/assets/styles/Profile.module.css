@@ -273,6 +273,7 @@
     font-family: "Courier New", Courier, monospace;
     padding: 1rem;
     margin-top: 89px;
+    width: 20rem;
     .profile {
       border: 2px solid gray;
     }
@@ -310,11 +311,12 @@
       color: rgb(197, 197, 197);
       font-size: 1.3rem;
       margin-top: 20px;
+    width: 21rem;
     }
     .Desp2 {
       color: rgb(197, 197, 197);
       font-size: 1.1rem;
-      width: 26rem;
+      width: 21rem;
     }
     .VerProyectos {
       display: inline-block;
@@ -383,7 +385,7 @@
       justify-items: center;
       border: 5px solid rgb(68, 68, 68);
       margin-top: 20px;
-      margin-left: 30px;
+      margin-left: 20px;
       width: 7rem;
       height: 13.5rem;
       overflow: hidden;
