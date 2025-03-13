@@ -2,7 +2,6 @@ import constacts from "../assets/styles/FooterContacts.module.css";
 import email from "../assets/images/svg/mail-black.svg";
 import github from "../assets/images/svg/github.svg";
 import linkedin from "../assets/images/svg/linkedin.svg";
-import { Contact } from "lucide-react";
 
 export const FooterContacts = () => {
   return (
