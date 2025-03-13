@@ -20,8 +20,8 @@ export const Skills = () => {
         <p className={skills.des}>Tecnologías y herramientas que domino.</p>
         <div className={skills.gridContainer}>
           {array.map((item) => (
-            <div className={skills.container}>
-            <Array key={item.id} nombre={item.nombre}></Array>
+            <div className={skills.container} key={item.id}>
+            <Array nombre={item.nombre}></Array>
             </div>
           ))}
         </div>
