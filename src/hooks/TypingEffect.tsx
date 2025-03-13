@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import inicio from "../assets/styles/Profile.module.css";
 
-
 const TypingEffect: React.FC = () => {
-  const [visibleText, setVisibleText] = useState<string>('');
+  const [visibleText, setVisibleText] = useState<string>("");
   const [isDeleting, setIsDeleting] = useState<boolean>(false);
   const fullText: string = "Hola, soy Dylan";
-  const typingSpeed: number = 100; 
-  const deletingSpeed: number = 70; 
+  const typingSpeed: number = 100;
+  const deletingSpeed: number = 70;
   const pauseDuration: number = 1000;
 
   useEffect(() => {
@@ -31,8 +30,15 @@ const TypingEffect: React.FC = () => {
       }, pauseDuration);
     }
 
-    return () => window.clearTimeout(timeout); 
-  }, [visibleText, isDeleting, fullText, typingSpeed, deletingSpeed, pauseDuration]);
+    return () => window.clearTimeout(timeout);
+  }, [
+    visibleText,
+    isDeleting,
+    fullText,
+    typingSpeed,
+    deletingSpeed,
+    pauseDuration,
+  ]);
 
   return (
     <h1 className={inicio.Nombre}>

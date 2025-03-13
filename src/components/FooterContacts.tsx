@@ -14,7 +14,7 @@ export const FooterContacts = () => {
         </p>
         <div className={constacts.emailContainer}>
           <a
-            href="https://lucide.dev/icons/arrow-right"
+            href="#"
             className={constacts.email}
           >
             <img src={email} alt="email" className={constacts.iconEmail} />

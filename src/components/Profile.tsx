@@ -22,7 +22,7 @@ export const Profile = () => {
           </p>
           <div>
             <a href="#" className={inicio.VerProyectos}>
-              Ver proyectos 
+              Ver proyectos
               <img src={arrow} alt="flecha" />
             </a>
             <a href="#" className={inicio.ContactoProfile}>
@@ -33,7 +33,10 @@ export const Profile = () => {
             <a href="https://github.com/DumbNoxx" target="_blank">
               <img src={github} alt="github" className={inicio.githubProfile} />
             </a>
-            <a href="https://www.linkedin.com/in/dylan-marcano-994205266" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/dylan-marcano-994205266"
+              target="_blank"
+            >
               <img
                 src={linkedin}
                 alt="linkedin"
