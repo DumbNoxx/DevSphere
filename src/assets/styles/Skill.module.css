@@ -1,5 +1,48 @@
-/* Skill.module.css */
 .responsive-web {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 2rem;
+  width: auto;
+  .title {
+    font-size: 2rem;
+    color: white;
+    width: 13rem;
+  }
+  .des {
+    color: rgb(197, 197, 197);
+    margin-bottom: 2rem;
+    width: 20rem;
+  }
+  .gridContainer {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 0.32fr);
+    gap: 1rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .container {
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 0.5rem;
+  }
+  .circle {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: white;
+    margin: auto 0;
+  }
+  .arra {
+    font-size: 0.875rem;
+    color: white;
+    margin: auto 0;
+  }
+
   @media (max-width: 768px) and (min-width: 501px) {
     padding: 2rem;
     .title {
@@ -13,17 +56,17 @@
     .gridContainer {
       color: white;
       display: grid;
-      grid-template-columns: repeat(3, 0.37fr); 
-      gap: 1rem; 
-      width: 100%; 
-      max-width: 100%; 
-      margin: 0 auto; 
+      grid-template-columns: repeat(3, 0.37fr);
+      gap: 1rem;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
     }
     .container {
       display: flex;
-      align-items: center; 
+      align-items: center;
       gap: 0.5rem;
-      padding: 0.75rem; 
+      padding: 0.75rem;
       border: 1px solid rgb(44, 44, 44);
       border-radius: 0.5rem;
     }
@@ -54,17 +97,17 @@
     .gridContainer {
       color: white;
       display: grid;
-      grid-template-columns: repeat(2, 1fr); 
-      gap: 1rem; 
-      width: 100%; 
-      max-width: 100%; 
-      margin: 0 auto; 
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
     }
     .container {
       display: flex;
-      align-items: center; 
+      align-items: center;
       gap: 0.5rem;
-      padding: 0.75rem; 
+      padding: 0.75rem;
       border: 1px solid rgb(44, 44, 44);
       border-radius: 0.5rem;
     }

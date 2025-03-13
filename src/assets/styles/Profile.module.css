@@ -1,5 +1,136 @@
 .responsive-web {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+  padding: 3rem;
+  margin-top: 5rem;
+  width: auto;
+  .badged {
+    background-color: white;
+    color: black;
+    width: 11rem;
+    border-radius: 2rem;
+    margin: 5px;
+    text-align: left;
+    font-weight: bold;
+    font-size: small;
+    padding: 0.1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.3rem;
+    transition: 0.4s ease;
+    cursor: pointer;
+    margin-bottom: -2rem;
+  }
+  .badged:hover {
+    background-color: rgb(206, 203, 203);
+  }
+  .Nombre {
+    width: 30rem;
+    color: white;
+    font-size: 4rem;
+    word-spacing: -0.5rem;
+    font-weight: bold;
+  }
+  .Desp1 {
+    margin-top: -2rem;
+    width: 25rem;
+    color: rgb(197, 197, 197);
+    font-size: 1.3rem;
+  }
+  .Desp2 {
+    color: rgb(197, 197, 197);
+    width: 34rem;
+    font-size: 0.97rem;
+    margin-bottom: 2rem;
+  }
+  .VerProyectos {
+    display: inline-block;
+    width: 10rem;
+    background-color: white;
+    text-align: center;
+    padding: 0.6rem 0.4rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: black;
+    transition: 0.4s ease;
+  }
+  .VerProyectos:hover {
+    background-color: rgb(214, 214, 214);
+  }
+  .VerProyectos img {
+    width: 15px; 
+    margin-left: 0.5rem; 
+    position: relative;
+    top: 2.2px;
+  }
+  .ContactoProfile {
+    background-color: #111111;
+    margin-left: 22px;
+    border: 1px solid rgb(53, 53, 53);
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    transition: 0.3s ease;
+  }
+  .ContactoProfile:hover {
+    background-color: #131313;
+  }
+  .back {
+    display: flex;
+    width: 20rem;
+  }
+  .githubProfile {
+    width: 1.3rem;
+    margin-top: 20px;
+    transition: 0.5s ease;
+    padding: 0.5rem;
+    border-radius: 10%;
+  }
+  .githubProfile:hover {
+    background-color: rgb(39, 39, 39);
+  }
+  .linkedinProfile {
+    width: 1.3rem;
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: 0.5s ease;
+    padding: 0.5rem;
+    border-radius: 10%;
+  }
+  .linkedinProfile:hover {
+    background-color: rgb(39, 39, 39);
+  }
+  .emailProfile {
+    width: 1.3rem;
+    padding: 0.5rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: 0.5s ease;
+    border-radius: 10%;
+  }
+  .emailProfile:hover {
+    background-color: rgb(39, 39, 39);
+  }
+  .Dylan {
+    border-radius: 100%;
+    padding: 2rem 5rem;
+    justify-items: center;
+    border: 5px solid rgb(68, 68, 68);
+    margin-left: 53rem;
+    margin-top: -20rem;
+    width: 7rem;
+    height: 13.5rem;
+    overflow: hidden;
+    position: relative;
+  }
+  .dylan {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   @media (max-width: 768px) and (min-width: 501px) {
     width: 44rem;
     padding: 2rem;
@@ -64,6 +195,7 @@
       top: 2.2px;
     }
     .ContactoProfile {
+      background-color: #111111;
       margin-left: 22px;
       border: 1px solid rgb(53, 53, 53);
       padding: 0.6rem 1rem;
@@ -72,7 +204,8 @@
       transition: 0.3s ease;
     }
     .ContactoProfile:hover {
-      background-color: rgb(37, 37, 37);
+      background-color: #131313;
+
     }
     .back {
       display: flex;
@@ -194,6 +327,7 @@
       background-color: rgb(214, 214, 214);
     }
     .ContactoProfile {
+      background-color: #111111;
       margin-left: 22px;
       border: 1px solid rgb(53, 53, 53);
       padding: 0.6rem 1rem;
@@ -202,7 +336,7 @@
       transition: 0.3s ease;
     }
     .ContactoProfile:hover {
-      background-color: rgb(37, 37, 37);
+      background-color: #131313;
     }
     .back {
       display: flex;

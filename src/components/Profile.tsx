@@ -4,6 +4,7 @@ import linkedin from "../assets/images/svg/linkedin.svg";
 import email from "../assets/images/svg/mail.svg";
 import dylan from "../assets/images/dylan.jpeg";
 import arrow from "../assets/images/svg/arrow-right.svg";
+import TypingEffect from "../hooks/TypingEffect";
 
 export const Profile = () => {
   return (
@@ -13,7 +14,7 @@ export const Profile = () => {
           <div className={inicio.badged}>Disponible para proyectos</div>
         </div>
         <div>
-          <h1 className={inicio.Nombre}>Hola, soy Dylan</h1>
+          <TypingEffect />
           <p className={inicio.Desp1}>Desarrollador Web & Diseñador PixelArt</p>
           <p className={inicio.Desp2}>
             Creo experiencias digitales atractivas y funcionales para la web
