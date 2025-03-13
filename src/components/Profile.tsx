@@ -47,6 +47,7 @@ export const Profile = () => {
             <img src={dylan} alt="dylan" className={inicio.dylan} />
           </div>
         </div>
+        <div className={inicio.separador}></div>
       </div>
     </>
   );
