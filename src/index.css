@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
-
-
 :root {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -15,6 +13,33 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  .Nombre {
+    font-size: 3rem;
+  }
+
+  @media (min-width: 640px) {
+    .Nombre {
+      font-size: 4rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .Nombre {
+      font-size: 3rem;
+    }
+
+    @media (min-width: 1024px) {
+      .Nombre {
+        font-size: 5rem;
+      }
+    }
+
+    @media (min-width: 1536px) {
+      .Nombre {
+        font-size: 6rem;
+      }
+    }
+  }
 }
 
 a {

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import inicio from "../assets/styles/Profile.module.css";
 
 const TypingEffect: React.FC = () => {
   const [visibleText, setVisibleText] = useState<string>("");
@@ -41,7 +40,7 @@ const TypingEffect: React.FC = () => {
   ]);
 
   return (
-    <h1 className={inicio.Nombre}>
+    <h1 className="Nombre">
       {visibleText}
       <span style={{ opacity: 0 }}>{fullText.slice(visibleText.length)}</span>
     </h1>

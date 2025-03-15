@@ -2,20 +2,23 @@ import projects from "../assets/styles/Projects.module.css";
 import inventech from "../assets/images/inventech.png";
 import github from "../assets/images/svg/github.svg";
 import arrow from "../assets/images/svg/arrow-right.svg";
+
 export const Projects = () => {
   return (
     <>
-      <div className={projects["responsive-web"]}>
-        <h2 className={projects.title}>Proyectos Destacados</h2>
-        <p className={projects.desp}>
+      <div className="p-6">
+        <h2 className="w-80 text-4xl text-white">
+          Proyectos Destacados
+        </h2>
+        <p className="w-84 mt-5 text-xl text-stone-400">
           Una seleccion de mis proyectos recientes.
         </p>
         <div>
-          <div className={projects.borderImg}>
+          <div className="mt-3 rounded-2xl overflow-hidden">
             <img
               src={inventech}
               alt="inventech"
-              className={projects.inventech}
+              className=""
             />
           </div>
           <div className={projects.desProject}>
