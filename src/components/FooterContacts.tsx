@@ -16,6 +16,7 @@ export const FooterContacts = () => {
           <a
             href="#"
             className={constacts.email}
+            id='email'
           >
             <img src={email} alt="email" className={constacts.iconEmail} />
             Enviame un mail

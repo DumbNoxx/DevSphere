@@ -9,23 +9,39 @@ import TypingEffect from "../hooks/TypingEffect";
 export const Profile = () => {
   return (
     <>
-      <div className={inicio["responsive-web"]}>
+      <div className="p-8">
         <div>
-          <div className={inicio.badged}>Disponible para proyectos</div>
+          <div
+            className="text-[0.8rem] w-40 rounded-2xl bg-white text-black
+           py-0.5 px-2 font-bold hover:bg-gray-100 transition-colors duration-400
+            cursor-pointer sm:bg-amber-950 mb-3"
+          >
+            Disponible para proyectos
+          </div>
         </div>
         <div>
           <TypingEffect />
-          <p className={inicio.Desp1}>Desarrollador Web & Diseñador PixelArt</p>
-          <p className={inicio.Desp2}>
+          <p className="text-2xl sm:text-3xl mt-3">
+            Desarrollador Web & Diseñador PixelArt
+          </p>
+          <p className="mt-3 text-base sm:text-lg">
             Creo experiencias digitales atractivas y funcionales para la web
             moderna.
           </p>
-          <div>
-            <a href="#" className={inicio.VerProyectos}>
+          <div className="mt-3 flex flex-row">
+            <a href="#" className="text-black bg-white flex
+             w-35.5 py-1.5 px-3 rounded-md mt-3 no-underline
+             hover:bg-gray-300 transition-colors duration-400"
+             style={{ color: 'black', textDecoration: 'none' }}>
               Ver proyectos
-              <img src={arrow} alt="flecha" />
+              <img src={arrow} alt="flecha"
+              className="w-5 ml-1"
+              />
             </a>
-            <a href="#" className={inicio.ContactoProfile}>
+            <a href="#email"
+             className="mt-3 ml-6 border border-stone-800 py-1.5 px-3
+             rounded-md hover:bg-stone-900 transition-colors duration-400"
+             style={{ color: 'white', textDecoration: 'none' }}>
               Contacto
             </a>
           </div>
