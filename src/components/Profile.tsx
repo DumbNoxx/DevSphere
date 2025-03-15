@@ -42,7 +42,7 @@ export const Profile = () => {
              className="mt-3 ml-6 border border-stone-800 py-1.5 px-3
              rounded-md hover:bg-stone-900 transition-colors duration-400"
              style={{ color: 'white', textDecoration: 'none' }}>
-              Contacto
+              Contacto 
             </a>
           </div>
           <div className={inicio.back}>
