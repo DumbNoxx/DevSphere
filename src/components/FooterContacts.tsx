@@ -25,7 +25,7 @@ export const FooterContacts = () => {
           >
             <img src={email}
              alt="email"
-              className="mr-2" />
+              className="mr-2 md:w-4.5" />
             Enviame un mail
           </a>
         </div>
