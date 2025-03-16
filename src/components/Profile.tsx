@@ -32,7 +32,8 @@ export const Profile = () => {
           </p>
           <div className="mt-3 flex flex-row">
             <a
-              href="#"
+              href="https://github.com/DumbNoxx?tab=repositories"
+              target="_blank"
               className="!text-black bg-white flex
              w-35.5 py-1.5 px-3 rounded-md mt-3 no-underline
              hover:bg-gray-300 transition-colors duration-400
@@ -80,7 +81,7 @@ export const Profile = () => {
             </a>
           </div>
           <div
-            className="size-70 mt-6 md:size-60 lg:size-100 border-5 border-stone-400 rounded-full overflow-hidden
+            className="size-70 mt-6 md:size-60 lg:size-100 border-5 border-stone-600 rounded-full overflow-hidden
           md:ml-120 lg:ml-180 md:-mt-60 lg:-mt-85 2xl:ml-300 2xl:mr-100"
           >
             <img src={dylan} alt="dylan" className="w-lg h-sm -mt-16" />
