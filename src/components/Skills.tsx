@@ -29,7 +29,7 @@ export const Skills = () => {
              ${item.textColor}`}
             key={item.id}>
             <img src={item.image} alt="" 
-            className="w-5 mt-[0.1rem]"/> <Array nombre={item.nombre}></Array> 
+            className="w-5 mt-[0.1rem] mr-0.5"/> <Array nombre={item.nombre}></Array> 
             </div>
           ))}
         </div>

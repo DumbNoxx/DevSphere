@@ -60,7 +60,8 @@ export const Projects = () => {
             </div>
             <div className="flex flex-row space-x-7 mt-4">
               <a
-                href="#"
+                href="https://github.com/DumbNoxx/InvenTech2"
+                target="_blank"
                 className="flex border border-stone-800
                  rounded-md px-6 hover:bg-stone-900 transition-colors
                  duration-400 !text-stone-400 py-1
@@ -98,7 +99,7 @@ export const Projects = () => {
             </p>
             <div className="flex flex-row space-x-2.5 mt-2.5">
               <a
-                href="https://www.python.org/"
+                href="https://react.dev/"
                 target="_blank"
                 className="!text-stone-400  py-0.2 px-3 rounded-2xl border border-stone-800
                  hover:bg-stone-900 transition-colors duration-400
@@ -107,7 +108,7 @@ export const Projects = () => {
                 React
               </a>
               <a
-                href="https://customtkinter.tomschimansky.com/"
+                href="https://www.typescriptlang.org"
                 target="_blank"
                 className="!text-stone-400  py-0.2 px-3 rounded-2xl border border-stone-800
                  hover:bg-stone-900 transition-colors duration-400
@@ -116,13 +117,22 @@ export const Projects = () => {
                 TypeScript
               </a>
               <a
-                href="https://www.python.org/"
+                href="https://nodejs.org"
                 target="_blank"
                 className="!text-stone-400  py-0.2 px-3 rounded-2xl border border-stone-800
                  hover:bg-stone-900 transition-colors duration-400
                  md:text-lg"
               >
                 NodeJS
+              </a>
+              <a
+                href="https://tailwindcss.com"
+                target="_blank"
+                className="!text-stone-400  py-0.2 px-3 rounded-2xl border border-stone-800
+                 hover:bg-stone-900 transition-colors duration-400
+                 md:text-md"
+              >
+                TailwindCSS
               </a>
 
             </div>

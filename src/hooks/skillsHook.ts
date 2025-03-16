@@ -9,6 +9,7 @@ import bash from "../assets/images/svg/bash.svg";
 import posgresql from "../assets/images/svg/postgresql.svg";
 import react from "../assets/images/svg/react.svg";
 import node from "../assets/images/svg/nodo-js.svg";
+import tailwind from "../assets/images/svg/tailwind.svg";
 
 
 export const skillsHook = () => {
@@ -23,6 +24,8 @@ export const skillsHook = () => {
       {id: 7, nombre: "PostgreSQL", image:posgresql, colors: "hover:bg-slate-900"},
       {id: 8, nombre: "React", image:react, colors: "hover:bg-sky-800"},
       {id: 9, nombre: "NodeJS",image:node, colors: "hover:bg-emerald-900"},
+      {id: 10, nombre: "TailwindCSS",image:tailwind, colors: "hover:bg-emerald-300", textColor: "hover:text-black"},
+
     ]
     const [array, setArray] = useState(listadoSkill);
     setArray;
