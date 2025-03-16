@@ -2,6 +2,11 @@ import { useEffect } from "react";
 import {spiderEffect} from "../hooks/spiderEffect";
 
 export const Spider = () => {
+    /**
+     * Quiero agradecer a meowish porque fue el creador original de la spider
+     * un grande el bro. <3
+     */
+
   const canvasRef = spiderEffect();
 
   // Ajustar el tamaño del canvas al tamaño de la ventana
