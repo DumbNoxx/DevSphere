@@ -97,11 +97,11 @@ export const Projects = () => {
               para que puedas enviarme un correo electronico para contactarme, ademas de poner en prueba
               mis conocimientos sobre el frontend.
             </p>
-            <div className="flex flex-row space-x-2.5 mt-2.5">
+            <div className="grid grid-cols-3 sm:flex sm:flex-row space-x-2.5 space-y-3 sm:space-y-0 mt-2.5 w-80">
               <a
                 href="https://react.dev/"
                 target="_blank"
-                className="!text-stone-400  py-0.2 px-3 rounded-2xl border border-stone-800
+                className="!text-stone-400 text-center py-0.2 px-3 rounded-2xl border border-stone-800
                  hover:bg-stone-900 transition-colors duration-400
                  md:text-lg"
               >
@@ -119,7 +119,7 @@ export const Projects = () => {
               <a
                 href="https://nodejs.org"
                 target="_blank"
-                className="!text-stone-400  py-0.2 px-3 rounded-2xl border border-stone-800
+                className="!text-stone-400 text-center py-0.2 px-3 rounded-2xl border border-stone-800
                  hover:bg-stone-900 transition-colors duration-400
                  md:text-lg"
               >
