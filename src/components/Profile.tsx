@@ -1,6 +1,6 @@
 import github from "../assets/images/svg/github.svg";
 import linkedin from "../assets/images/svg/linkedin.svg";
-import email from "../assets/images/svg/mail.svg";
+import instagram from "../assets/images/svg/instagram.svg";
 import dylan from "../assets/images/dylan.jpeg";
 import arrow from "../assets/images/svg/arrow-right.svg";
 import TypingEffect from "../hooks/TypingEffect";
@@ -71,9 +71,9 @@ export const Profile = () => {
                rounded-md 2xl:w-10"
               />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/dumb.nox">
               <img
-                src={email}
+                src={instagram}
                 alt="email"
                 className="w-8 p-1.5 hover:bg-stone-900 transition-colors duration-400
                rounded-md 2xl:w-10"
