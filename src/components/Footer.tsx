@@ -1,11 +1,9 @@
-import footer from "../assets/styles/Footer.module.css";
-
 export const Footer = () => {
   return (
     <>
-      <div className={footer["responsive-web"]}>
-        <footer className={footer.footer}>
-          <p>© 2025 Dylan. Todos los derechos reservados.</p>
+      <div className="flex flex-row justify-center text-center -mt-14 lg:-mt-16">
+        <footer className="grid text-xs sm:text-sm lg:text-base">
+          <p>© 2025 Dylan. 🌐 Código abierto bajo MIT.</p>
           <p>Diseñado y desarrollado con ❤️</p>
         </footer>
       </div>
