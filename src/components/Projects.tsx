@@ -7,11 +7,11 @@ export const Projects = () => {
   return (
     <>
       <div className="p-6">
-        <h2 className="w-80 text-4xl text-white lg:text-5xl
+        <h2 className="w-80 text-3xl sm:text-4xl text-white lg:text-5xl
         lg:w-105">
           Proyectos Destacados
           </h2>
-        <p className="w-84 mt-5 text-xl text-stone-400
+        <p className="w-84 mt-5 text-[1.17rem] sm:text-xl text-stone-400
         lg:text-2xl lg:w-101">
           Una seleccion de mis proyectos recientes.
         </p>

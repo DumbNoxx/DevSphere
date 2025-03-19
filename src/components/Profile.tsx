@@ -25,7 +25,7 @@ export const Profile = () => {
           2xl:text-6xl">
             Desarrollador Web & Diseñador PixelArt
           </p>
-          <p className="mt-3 text-base text-stone-400 sm:text-md md:text-sm
+          <p className="mt-3 text-base w-80 text-stone-400 sm:text-md md:text-sm
            lg:text-lg xl:text-lg 2xl:text-4xl">
             Creo experiencias digitales atractivas y funcionales para la web
             moderna.
@@ -71,7 +71,8 @@ export const Profile = () => {
                rounded-md 2xl:w-10"
               />
             </a>
-            <a href="https://www.instagram.com/dumb.nox">
+            <a href="https://www.instagram.com/dumb.nox"
+            target="_blank">
               <img
                 src={instagram}
                 alt="email"

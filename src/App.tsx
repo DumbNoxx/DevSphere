@@ -11,6 +11,7 @@ export const App = () => {
   document.body.style.overflowX = "hidden";
 
   document.documentElement.style.overflowX = "hidden";
+
   const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useEffect(() => {
@@ -32,20 +33,18 @@ export const App = () => {
     <>
       <div>
         {isLargeScreen && <Spider />}
-
         <div className="relative z-10">
-        <Profile />
-        <Divider />
-        <Projects />
-        <Divider />
-        <Skills />
-        <Divider />
-        <FooterContacts />
-        <Divider />
-        <Footer />
+          <Profile />
+          <Divider />
+          <Projects />
+          <Divider />
+          <Skills />
+          <Divider />
+          <FooterContacts />
+          <Divider />
+          <Footer />
+        </div>
       </div>
-      </div>
-      
     </>
   );
 };
