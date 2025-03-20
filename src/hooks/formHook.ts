@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { UseSendEmailReturn, FormDatas } from "../interfaces/indexFormInterface";
-const API = import.meta.env.VITE_API;
+const API = import.meta.env.VITE_API_SEND_MESSAGE;
 
 export const formHook = (): UseSendEmailReturn => {
   const initialForm = {
