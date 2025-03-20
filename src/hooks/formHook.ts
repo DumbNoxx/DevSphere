@@ -1,0 +1,60 @@
+import { useState } from "react"
+import { UseSendEmailReturn } from "../interfaces/useSendEmailReturn.interface";
+import { FormDatas } from "../interfaces/formEmail.interface";
+const API = import.meta.env.VITE_API;
+
+export const formHook = (): UseSendEmailReturn => {
+  const initialForm = {
+    name:"",
+    email:"",
+    enterprice:""
+  }
+  
+  const [formData, setFormData] = useState<FormDatas>({
+    name:"",
+    email:"",
+    enterprice:""
+  });
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+  const [errorMessage, setErrorMessage] = useState<string>("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+  const handleSubmit = async (e: React.FormEvent): Promise<void> => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setErrorMessage('');
+    try {
+      const response = await fetch(API, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData)
+      });
+      if (!response.ok) {
+        throw new Error(`Error en la solicitud ${response.status}`);
+      }
+      setFormData(initialForm);
+      alert('Email enviado')
+    } catch (err) {
+      setErrorMessage("Hubo un problema al enviar los datos al servidor.");
+      alert("Se te han acabado las solicitudes a la api, intenta manana");
+      console.error("Error:", err)
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+  return {
+    formData,
+    handleChange,
+    handleSubmit,
+    isSubmitting,
+    errorMessage
+  };
+}
