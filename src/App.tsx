@@ -1,13 +1,5 @@
-import {
-  Divider,
-  Footer,
-  FooterContacts,
-  Profile,
-  Projects,
-  Skills,
-  Spider,
-  FormContactModal,
-} from "./components/indexComponentPage";
+import { Divider, Footer, FooterContacts, Profile, Projects, Skills,
+  Spider, FormContactModal } from "./components/indexComponentPage";
 import { isLargeScreenHook } from "./hooks/isLargeScreen";
 
 export const App = () => {
