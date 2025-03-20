@@ -1,6 +1,4 @@
-import email from "../assets/images/svg/mail-black.svg";
-import github from "../assets/images/svg/github.svg";
-import linkedin from "../assets/images/svg/linkedin.svg";
+import { mailBlack, github, linkedin } from "../../assets/images/indexImages";
 
 export const FooterContacts = () => {
   return (
@@ -23,7 +21,7 @@ export const FooterContacts = () => {
             sm:mx-50 md:mx-70 lg:mx-auto"
             id='email'
           >
-            <img src={email}
+            <img src={mailBlack}
              alt="email"
               className="mr-2 md:w-4.5" />
             Enviame un mail

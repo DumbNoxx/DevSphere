@@ -1,8 +1,6 @@
 import { useEffect, useRef } from "react";
-import { Spider } from "../types/Spider/spider.type";
-import { resizeCanvas } from "../helpers/Spider/resizeCanvas.helper";
-import { many } from "../helpers/Spider/many.helper";
-import { spawn } from "../helpers/Spider/spawn.helper";
+import { Spider } from "../types/indexTypeSpider";
+import { spawn, resizeCanvas, many } from "../helpers/indexSpider";
 
 export const spiderEffect = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -28,7 +26,7 @@ export const spiderEffect = () => {
     // Escuchar el evento resize
     window.addEventListener("resize", handleResize);
 
-    // Manejar la creacion de la arania
+    // Manejar la creacion de la spider
     const handleSpawn = () => {
       return spawn(w, h, ctx);
     };

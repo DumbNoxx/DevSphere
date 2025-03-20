@@ -1,6 +1,5 @@
 import { useState } from "react"
-import { UseSendEmailReturn } from "../interfaces/useSendEmailReturn.interface";
-import { FormDatas } from "../interfaces/formEmail.interface";
+import { UseSendEmailReturn, FormDatas } from "../interfaces/indexFormInterface";
 const API = import.meta.env.VITE_API;
 
 export const formHook = (): UseSendEmailReturn => {
@@ -13,7 +12,7 @@ export const formHook = (): UseSendEmailReturn => {
   const [formData, setFormData] = useState<FormDatas>({
     name:"",
     email:"",
-    enterprice:""
+    enterprice:"" 
   });
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string>("");

@@ -1,4 +1,4 @@
-import { formHook } from "../hooks/formHook";
+import { formHook } from "../../hooks/formHook";
 
 export const FormContactModal = () => {
   const { formData, handleChange, handleSubmit, isSubmitting, errorMessage} = formHook();

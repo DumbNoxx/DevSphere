@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import {spiderEffect} from "../hooks/spiderEffect";
+import {spiderEffect} from "../../hooks/spiderEffect";
 
 export const Spider = () => {
   const canvasRef = spiderEffect();

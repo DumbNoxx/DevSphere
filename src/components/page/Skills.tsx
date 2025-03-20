@@ -1,4 +1,4 @@
-import { skillsHook } from "../hooks/skillsHook";
+import { skillsHook } from "../../hooks/skillsHook";
 
 const Array = ({ nombre }: { nombre: string }) => {
   return (

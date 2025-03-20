@@ -1,9 +1,7 @@
-import github from "../assets/images/svg/github.svg";
-import linkedin from "../assets/images/svg/linkedin.svg";
-import instagram from "../assets/images/svg/instagram.svg";
-import dylan from "../assets/images/dylan.jpeg";
-import arrow from "../assets/images/svg/arrow-right.svg";
-import TypingEffect from "../hooks/TypingEffect";
+import TypingEffect from "../../hooks/TypingEffect";
+import {
+  github, linkedin, instagram,
+  dylan, arrowRight } from "../../assets/images/indexImages";
 
 export const Profile = () => {
   return (
@@ -21,12 +19,16 @@ export const Profile = () => {
         </div>
         <div>
           <TypingEffect />
-          <p className="text-2xl sm:text-2xl md:text-md lg:text-3xl mt-3 text-stone-400
-          2xl:text-6xl">
+          <p
+            className="text-2xl sm:text-2xl md:text-md lg:text-3xl mt-3 text-stone-400
+          2xl:text-6xl"
+          >
             Desarrollador Web & Diseñador PixelArt
           </p>
-          <p className="mt-3 text-base text-stone-400 sm:text-md md:text-sm
-           lg:text-lg xl:text-lg 2xl:text-4xl">
+          <p
+            className="mt-3 text-base text-stone-400 sm:text-md md:text-sm
+           lg:text-lg xl:text-lg 2xl:text-4xl"
+          >
             Creo experiencias digitales atractivas y funcionales para la web
             moderna.
           </p>
@@ -40,7 +42,11 @@ export const Profile = () => {
              2xl:w-48 2xl:text-2xl"
             >
               Ver proyectos
-              <img src={arrow} alt="flecha" className="w-5 ml-1 2xl:w-6 2xl:mt-[0.rem] " />
+              <img
+                src={arrowRight}
+                alt="flecha"
+                className="w-5 ml-1 2xl:w-6 2xl:mt-[0.rem] "
+              />
             </a>
             <a
               href="#email"
