@@ -1,4 +1,6 @@
 import { useEffect, useRef } from "react";
+import { Point } from "../types/point.type";
+import { Spider } from "../types/spider.type";
 
 export const spiderEffect = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -16,19 +18,6 @@ export const spiderEffect = () => {
         let w = canvas.width = window.innerWidth;
         let h = canvas.height = window.innerHeight;
 
-        // Definición de tipos
-        type Point = {
-            x: number;
-            y: number;
-            len?: number;
-            r?: number;
-            t?: number;
-        };
-
-        type Spider = {
-            follow: (x: number, y: number) => void;
-            tick: (t: number) => void;
-        };
 
         // Función para redimensionar el canvas
         const resizeCanvas = () => {
