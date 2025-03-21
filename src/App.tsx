@@ -1,12 +1,23 @@
-import { Divider, Footer, FooterContacts, Profile, Projects, Skills,
-  Spider, FormContactModal } from "./components/indexComponentPage";
+import {
+  Divider,
+  Footer,
+  FooterContacts,
+  Profile,
+  Projects,
+  Skills,
+  Spider,
+  FormContactModal,
+  Modal,
+} from "./components/indexComponentPage";
 import { isLargeScreenHook } from "./hooks/isLargeScreen";
+import { openModall } from "./hooks/openModal";
 
 export const App = () => {
   document.body.style.overflowX = "hidden";
 
   document.documentElement.style.overflowX = "hidden";
   const { isLargeScreen } = isLargeScreenHook();
+  const { isModalOpen, closeModal, openModal } = openModall();
 
   return (
     <>
@@ -20,11 +31,14 @@ export const App = () => {
           <Divider />
           <Skills />
           <Divider />
-          <FooterContacts />
+          <FooterContacts openModal={openModal} />
           <Divider />
           <Footer />
-          <Divider />
-          <FormContactModal />
+          {isModalOpen && (
+            <Modal onClose={closeModal}>
+              <FormContactModal />
+            </Modal>
+          )}
         </div>
       </div>
     </>

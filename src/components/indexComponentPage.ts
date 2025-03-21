@@ -6,3 +6,4 @@ export * from './page/Profile';
 export * from './page/Projects';
 export * from './page/Skills';
 export * from './page/Spider';
+export * from './page/Modal';
