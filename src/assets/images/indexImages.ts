@@ -1,7 +1,7 @@
 // PNG
 export { default as dylan } from "./png/dylan.jpeg";
 export { default as inventech } from "./png/inventech.png";
-export { default as sspage } from "./png/sspage.png";
+export { default as sspage } from "./png/sspage2.png";
 
 // SVG
 export { default as arrowRight } from "./svg/arrow-right.svg";

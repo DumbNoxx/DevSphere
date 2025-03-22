@@ -85,7 +85,7 @@ export const Projects = () => {
         <div className="lg:flex mt-20">
           <div
             className="mt-3 w-80 rounded-2xl sm:w-120 overflow-hidden mr-3
-          md:w-170 md:ml-7 lg:w-160 lg:h-70"
+          md:w-170 md:ml-7 lg:w-160 lg:h-70 border border-stone-800"
           >
             <img
               src={sspage}
