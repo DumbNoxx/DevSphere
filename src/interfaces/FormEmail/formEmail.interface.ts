@@ -3,5 +3,5 @@ export interface FormDatas {
   email:string;
   enterprice?: string;
   message?: string;
-  checkbox?: boolean;
+  checkbutton?: boolean;
 }
