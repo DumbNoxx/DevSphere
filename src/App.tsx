@@ -1,33 +1,24 @@
-import { useEffect, useState } from "react";
-import { Divider } from "./components/Divider";
-import { Footer } from "./components/Footer";
-import { FooterContacts } from "./components/FooterContacts";
-import { Profile } from "./components/Profile";
-import { Projects } from "./components/Projects";
-import { Skills } from "./components/Skills";
-import { Spider } from "./components/Spider";
+import {
+  Divider,
+  Footer,
+  FooterContacts,
+  Profile,
+  Projects,
+  Skills,
+  Spider,
+  FormContactModal,
+  Modal,
+} from "./components/indexComponentPage";
+import { isLargeScreenHook } from "./hooks/isLargeScreen";
+import { openModall } from "./hooks/openModal";
 
 export const App = () => {
   document.body.style.overflowX = "hidden";
 
   document.documentElement.style.overflowX = "hidden";
 
-  const [isLargeScreen, setIsLargeScreen] = useState(false);
-
-  useEffect(() => {
-    if (typeof window != "undefined") {
-      const handleResize = () => {
-        setIsLargeScreen(window.innerWidth > 1024);
-      };
-
-      handleResize();
-
-      window.addEventListener("resize", handleResize);
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }
-  }, []);
+  const { isLargeScreen } = isLargeScreenHook();
+  const { isModalOpen, closeModal, openModal } = openModall();
 
   return (
     <>
@@ -40,9 +31,14 @@ export const App = () => {
           <Divider />
           <Skills />
           <Divider />
-          <FooterContacts />
+          <FooterContacts openModal={openModal} />
           <Divider />
           <Footer />
+          {isModalOpen && (
+            <Modal onClose={closeModal}>
+              <FormContactModal />
+            </Modal>
+          )}
         </div>
       </div>
     </>

@@ -1,4 +1,4 @@
-import { skillsHook } from "../hooks/skillsHook";
+import { skillsHook } from "../../hooks/skillsHook";
 
 const Array = ({ nombre }: { nombre: string }) => {
   return (
@@ -11,8 +11,6 @@ const Array = ({ nombre }: { nombre: string }) => {
 
 export const Skills = () => {
   const [array] = skillsHook();
-  array.map((item) => (
-    console.log(item.colors)));
   return (
     <>
       <div className="p-6">
