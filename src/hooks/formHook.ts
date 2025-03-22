@@ -6,13 +6,17 @@ export const formHook = (): UseSendEmailReturn => {
   const initialForm = {
     name:"",
     email:"",
-    enterprice:""
+    enterprice:"",
+    message:"",
+    checkbox:false
   }
   
   const [formData, setFormData] = useState<FormDatas>({
     name:"",
     email:"",
-    enterprice:"" 
+    enterprice:"",
+    message:"",
+    checkbox:false
   });
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string>("");

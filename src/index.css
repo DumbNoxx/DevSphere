@@ -64,7 +64,35 @@ h1 {
   line-height: 1.1;
 }
 
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+.animate-fade-in-slide-up {
+  animation: fadeInSlideUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeOutSlideDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.animate-fade-out-slide-down {
+  animation: fadeOutSlideDown 0.5s ease-in forwards;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
