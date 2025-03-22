@@ -8,7 +8,7 @@ export const formHook = (): UseSendEmailReturn => {
     email:"",
     enterprice:"",
     message:"",
-    checkbox:false
+    checkbutton:false
   }
   
   const [formData, setFormData] = useState<FormDatas>({
@@ -16,16 +16,23 @@ export const formHook = (): UseSendEmailReturn => {
     email:"",
     enterprice:"",
     message:"",
-    checkbox:false
+    checkbutton:false
   });
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string>("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    const { name, value, type, checked } = e.target;
+    setFormData({
+      ...formData,
+      [name]: type === "checkbox" ? checked : value,
+    });
+  };
+  const handleChangeTextArea = (e: React.ChangeEvent<HTMLTextAreaElement>): void => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value,
+      [name]:value,
     });
   };
   const handleSubmit = async (e: React.FormEvent): Promise<void> => {
@@ -57,6 +64,7 @@ export const formHook = (): UseSendEmailReturn => {
     formData,
     handleChange,
     handleSubmit,
+    handleChangeTextArea,
     isSubmitting,
     errorMessage
   };

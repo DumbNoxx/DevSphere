@@ -1,8 +1,14 @@
 import { formHook } from "../../hooks/formHook";
 
 export const FormContactModal = () => {
-  const { formData, handleChange, handleSubmit, isSubmitting, errorMessage } =
-    formHook();
+  const {
+    formData,
+    handleChange,
+    handleChangeTextArea,
+    handleSubmit,
+    isSubmitting,
+    errorMessage,
+  } = formHook();
   return (
     <>
       <div
@@ -81,6 +87,8 @@ export const FormContactModal = () => {
             className="border border-stone-800 focus:border-white rounded-lg py-1.5 px-3 ml-1 w-65 -mt-2
              placeholder-stone-400 min-h-30 resize-y sm:w-85 md:w-95 lg:w-110"
             maxLength={350}
+            value={formData.message}
+            onChange={handleChangeTextArea}
             id="mensajeForm"
           />
           <span className="text-xs md:text-[0.75rem] text-stone-400">
@@ -88,6 +96,8 @@ export const FormContactModal = () => {
               type="checkbox"
               name="checkbutton"
               id="checkbuttonForm"
+              checked={formData.checkbutton}
+              onChange={handleChange}
               className="mr-2 checked:border-transparent"
             />
             ¿Quieres recibir notificaciones sobre alguna publicacion hecha en mi
