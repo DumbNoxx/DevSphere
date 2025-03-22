@@ -1,7 +1,7 @@
 {
-  "name": "portfolio-frontend",
+  "name": "dev-sphere",
   "private": true,
-  "version": "2.5.0",
+  "version": "2.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
