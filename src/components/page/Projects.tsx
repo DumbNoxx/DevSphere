@@ -3,7 +3,7 @@ import { inventech, github, sspage } from "@/assets/images/indexImages";
 export const Projects = () => {
   return (
     <>
-      <article className="p-6">
+      <section className="p-6">
         <h2
           className="w-80 text-3xl sm:text-4xl text-white lg:text-5xl
         lg:w-105"
@@ -16,7 +16,7 @@ export const Projects = () => {
         >
           Una seleccion de mis proyectos recientes.
         </h3>
-        <section className="lg:flex">
+        <article className="lg:flex">
           <figure
             className="mt-3 w-80 rounded-2xl sm:w-120 overflow-hidden mr-3
           md:w-170 md:ml-7 lg:w-160 lg:h-70"
@@ -86,9 +86,9 @@ export const Projects = () => {
               </a>
             </div>
           </header>
-        </section>
+        </article>
         {/* Segundo proyecto */}
-        <section className="lg:flex mt-20">
+        <article className="lg:flex mt-20">
           <figure
             className="mt-3 w-80 rounded-2xl sm:w-120 overflow-hidden mr-3
           md:w-170 md:ml-7 lg:w-160 lg:h-70 border border-stone-800"
@@ -193,8 +193,8 @@ export const Projects = () => {
               </a>
             </div>
           </header>
-        </section>
-      </article>
+        </article>
+      </section>
     </>
   );
 };

@@ -4,7 +4,7 @@ import { FooterContactProds } from "@/interfaces/index.interface";
 export const FooterContacts = ({ openModal }: FooterContactProds) => {
   return (
     <>
-      <article className="p-6">
+      <section className="p-6">
         <h2
           className="text-4xl text-white text-center w-80 sm:ml-14 sm:w-120
         md:ml-32 lg:text-5xl lg:mx-auto"
@@ -18,7 +18,7 @@ export const FooterContacts = ({ openModal }: FooterContactProds) => {
           Estoy abierto a oportunidades freelance y proyectos interesantes.
           Contáctame y hablemos sobre cómo puedo ayudarte.
         </h3>
-        <section>
+        <article>
           <div className="flex flex-row lg:mt-5">
             <button
               onClick={openModal}
@@ -61,8 +61,8 @@ export const FooterContacts = ({ openModal }: FooterContactProds) => {
               </figure>
             </a>
           </div>
-        </section>
-      </article>
+        </article>
+      </section>
     </>
   );
 };

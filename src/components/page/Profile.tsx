@@ -11,16 +11,16 @@ export const Profile = () => {
   return (
     <>
       <header className="p-8 md:mt-12 lg:mt-40">
-          <span
-            className="text-[0.8rem] w-40 rounded-2xl bg-white text-black
+        <span
+          className="text-[0.8rem] w-40 rounded-2xl bg-white text-black
            py-0.5 px-2 font-bold hover:bg-gray-100 transition-colors duration-400
             cursor-pointer mb-3
             2xl:w-63 2xl:text-[1.3rem]"
-          >
-            Disponible para proyectos
-          </span>
-        <article>
-          <section>
+        >
+          Disponible para proyectos
+        </span>
+        <section>
+          <article>
             <TypingEffect />
             <h2
               className="text-2xl sm:text-2xl md:text-md lg:text-3xl mt-3 text-stone-400
@@ -99,8 +99,8 @@ export const Profile = () => {
                 <img src={dylan} alt="dylan" className="w-lg h-sm -mt-16" />
               </div>
             </figure>
-          </section>
-        </article>
+          </article>
+        </section>
       </header>
     </>
   );
