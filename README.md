@@ -36,19 +36,19 @@ Follow these steps to run the project locally:
 1. Clone the repository:
 
 ```bash
-   git clone git@github.com:DumbNoxx/DevSphere.git
-   cd DevSphere
+git clone git@github.com:DumbNoxx/DevSphere.git
+cd DevSphere
 ```
 
 2. Install dependencies:
 
 ```bash
-   npm install
+npm install
 ```
 
 3. Start the development server:
 ```bash
-   npm run dev
+npm run dev
 ```
 ---
 
