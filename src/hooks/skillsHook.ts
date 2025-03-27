@@ -3,7 +3,7 @@ import {
   python, ts, js, c,
   cpp, git, bash, postgreSQL,
   react, nodejs, tailwind,
-} from "../assets/images/indexImages";
+} from "@/assets/images/indexImages";
 
 export const skillsHook = () => {
   const listadoSkill = [

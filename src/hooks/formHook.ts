@@ -1,6 +1,8 @@
 import { useState } from "react"
-import { UseSendEmailReturn, FormDatas } from "../interfaces/index.interface";
-const API_SEND_MESSAGE = import.meta.env.VITE_API_SEND_MESSAGE;
+import { UseSendEmailReturn, FormDatas } from "@/interfaces/index.interface";
+import { ENV } from "@/env";
+
+const API = ENV.PUBLIC.API_URL;
 
 export const formHook = (): UseSendEmailReturn => {
   const initialForm = {
@@ -40,7 +42,7 @@ export const formHook = (): UseSendEmailReturn => {
     setIsSubmitting(true);
     setErrorMessage('');
     try {
-      const response = await fetch(API_SEND_MESSAGE, {
+      const response = await fetch(API, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
