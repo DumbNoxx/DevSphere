@@ -22,7 +22,6 @@ export const App = () => {
 
   return (
     <>
-      <div>
         {isLargeScreen && <Spider />}
         <div className="relative z-10">
           <Profile />
@@ -40,7 +39,6 @@ export const App = () => {
             </Modal>
           )}
         </div>
-      </div>
     </>
   );
 };

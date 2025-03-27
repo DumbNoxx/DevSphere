@@ -6,7 +6,7 @@ import {
 export const Profile = () => {
   return (
     <>
-      <div className="p-8 md:mt-12 lg:mt-40">
+      <header className="p-8 md:mt-12 lg:mt-40">
         <div>
           <div
             className="text-[0.8rem] w-40 rounded-2xl bg-white text-black
@@ -92,7 +92,7 @@ export const Profile = () => {
             <img src={dylan} alt="dylan" className="w-lg h-sm -mt-16" />
           </div>
         </div>
-      </div>
+      </header>
     </>
   );
 };
