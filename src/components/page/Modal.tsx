@@ -1,13 +1,13 @@
-import { ModalProps } from "../../interfaces/index.interface";
-import { animationFormHook } from "../../hooks/animationFormHook";
+import { ModalProps } from "@/interfaces/index.interface";
+import { animationFormHook } from "@/hooks/animationFormHook";
 
 export const Modal = ({ onClose, children }: ModalProps) => {
   const { formRef, handleClose } = animationFormHook({ onClose });
   return (
     <>
-      <div className="fixed inset-0 bg-opacity-50 backdrop-blur-sm z-50 flex justify-center items-center">
+      <article className="fixed inset-0 bg-opacity-50 backdrop-blur-sm z-50 flex justify-center items-center">
         {/* Contenedor del modal */}
-        <div
+        <section
           ref={formRef}
           className="p-6 rounded-lg relative max-w-md w-full mx-4 lg:max-w-lg lg:p-8"
         >
@@ -22,8 +22,8 @@ export const Modal = ({ onClose, children }: ModalProps) => {
           </button>
           {/* Contenido del modal */}
           {children}
-        </div>
-      </div>
+        </section>
+      </article>
     </>
   );
 };

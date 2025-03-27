@@ -1,19 +1,23 @@
-import { inventech, github, sspage } from "../../assets/images/indexImages";
+import { inventech, github, sspage } from "@/assets/images/indexImages";
 
 export const Projects = () => {
   return (
     <>
-      <div className="p-6">
-        <h2 className="w-80 text-3xl sm:text-4xl text-white lg:text-5xl
-        lg:w-105">
+      <article className="p-6">
+        <h2
+          className="w-80 text-3xl sm:text-4xl text-white lg:text-5xl
+        lg:w-105"
+        >
           Proyectos Destacados
-          </h2>
-        <p className="w-84 mt-5 text-[1.17rem] sm:text-xl text-stone-400
-        lg:text-2xl lg:w-101">
+        </h2>
+        <h3
+          className="w-84 mt-5 text-[1.17rem] sm:text-xl text-stone-400
+        lg:text-2xl lg:w-101"
+        >
           Una seleccion de mis proyectos recientes.
-        </p>
-        <div className="lg:flex">
-          <div
+        </h3>
+        <section className="lg:flex">
+          <figure
             className="mt-3 w-80 rounded-2xl sm:w-120 overflow-hidden mr-3
           md:w-170 md:ml-7 lg:w-160 lg:h-70"
           >
@@ -22,8 +26,8 @@ export const Projects = () => {
               alt="inventech"
               className="sm:w-120 md:w-170 lg:w-160 lg:h-70"
             />
-          </div>
-          <div className="mt-4 px-3.5 sm:mt-5 sm:ml-3">
+          </figure>
+          <header className="mt-4 px-3.5 sm:mt-5 sm:ml-3">
             <span
               className="bg-white text-black py-1.5 px-2
             rounded-2xl text-[0.8rem] hover:bg-gray-100 transition-colors
@@ -32,7 +36,7 @@ export const Projects = () => {
             >
               Proyecto 1
             </span>
-            <h3 className="text-4xl text-white mt-5 sm:text-5xl">InvenTech</h3>
+            <h4 className="text-4xl text-white mt-5 sm:text-5xl">InvenTech</h4>
             <p
               className="mt-2 w-80 text-stone-400 sm:text-2xl sm:w-120 md:w-170
             lg:w-150"
@@ -71,15 +75,21 @@ export const Projects = () => {
                  duration-400 !text-stone-400 py-1
                  md:text-lg"
               >
-                <img src={github} alt="github" className="w-5 mr-1 md:w-5.5" />
+                <figure>
+                  <img
+                    src={github}
+                    alt="github"
+                    className="w-5 mr-1 md:w-5.5"
+                  />
+                </figure>
                 Codigo
               </a>
             </div>
-          </div>
-        </div>
+          </header>
+        </section>
         {/* Segundo proyecto */}
-        <div className="lg:flex mt-20">
-          <div
+        <section className="lg:flex mt-20">
+          <figure
             className="mt-3 w-80 rounded-2xl sm:w-120 overflow-hidden mr-3
           md:w-170 md:ml-7 lg:w-160 lg:h-70 border border-stone-800"
           >
@@ -88,8 +98,8 @@ export const Projects = () => {
               alt="page"
               className="sm:w-120 md:w-170 lg:w-160 lg:h-70"
             />
-          </div>
-          <div className="mt-4 px-3.5 sm:mt-5 sm:ml-3">
+          </figure>
+          <header className="mt-4 px-3.5 sm:mt-5 sm:ml-3">
             <span
               className="bg-white text-black py-1.5 px-2
             rounded-2xl text-[0.8rem] hover:bg-gray-100 transition-colors
@@ -98,7 +108,7 @@ export const Projects = () => {
             >
               Proyecto 2
             </span>
-            <h3 className="text-4xl text-white mt-5 sm:text-5xl">Portfolio</h3>
+            <h4 className="text-4xl text-white mt-5 sm:text-5xl">Portfolio</h4>
             <p
               className="mt-2 w-80 text-stone-400 sm:text-2xl sm:w-120 md:w-170
             lg:w-150"
@@ -155,7 +165,13 @@ export const Projects = () => {
                  duration-400 !text-stone-400 py-1
                  md:text-lg"
               >
-                <img src={github} alt="github" className="w-5 mr-1 md:w-5.5" />
+                <figure>
+                  <img
+                    src={github}
+                    alt="github"
+                    className="w-5 mr-1 md:w-5.5"
+                  />
+                </figure>
                 Codigo
               </a>
               <a
@@ -166,13 +182,19 @@ export const Projects = () => {
                  duration-400 !text-stone-400 py-1
                  md:text-lg"
               >
-                <img src={github} alt="github" className="w-5 mr-1 md:w-5.5" />
+                <figure>
+                  <img
+                    src={github}
+                    alt="github"
+                    className="w-5 mr-1 md:w-5.5"
+                  />
+                </figure>
                 Codigo 2
               </a>
             </div>
-          </div>
-        </div>
-      </div>
+          </header>
+        </section>
+      </article>
     </>
   );
 };
