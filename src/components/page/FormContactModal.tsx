@@ -31,7 +31,7 @@ export const FormContactModal = () => {
             md:text-base my-auto"
           >
             Nombre
-            <span className="text-[0.6rem] md:text-[0.8rem] text-stone-400 my-auto">
+            <span className="text-[0.6rem] md:text-[0.8rem] text-stone-400 my-auto mb-[3px]">
               Para mayor gestion puedes colocar tu nombre completo.
             </span>
           </label>
