@@ -29,7 +29,7 @@ export const Profile = () => {
               Desarrollador Web & Desarrollador Móvil
             </h2>
             <h3
-              className="mt-3 text-base w-95 md:w-120 text-stone-400 sm:text-md md:text-sm
+              className="mt-3 text-base w-85 md:w-120 text-stone-400 sm:text-md md:text-sm
            lg:text-lg xl:text-lg 2xl:text-4xl"
             >
               Creo experiencias digitales atractivas y funcionales, 
