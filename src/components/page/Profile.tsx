@@ -26,7 +26,7 @@ export const Profile = () => {
               className="text-2xl sm:text-2xl md:text-md lg:text-3xl mt-3 text-stone-400
           2xl:text-6xl"
             >
-              Desarrollador Web & Diseñador PixelArt
+              Desarrollador Web & Desarrollador Móvil
             </h2>
             <h3
               className="mt-3 text-base w-80 text-stone-400 sm:text-md md:text-sm
