@@ -32,8 +32,8 @@ export const Profile = () => {
               className="mt-3 text-base w-80 text-stone-400 sm:text-md md:text-sm
            lg:text-lg xl:text-lg 2xl:text-4xl"
             >
-              Creo experiencias digitales atractivas y funcionales para la web
-              moderna.
+              Creo experiencias digitales atractivas y funcionales, 
+              tanto para la web moderna como para aplicaciones móviles nativas e híbridas.
             </h3>
             <nav className="mt-3 flex flex-row">
               <a
