@@ -1,6 +1,16 @@
 import { useEffect, useRef, useState } from "react";
+import { AnimationFormHookReturn } from "@/types";
+/**
+ * Custom hook for managing the animation state of a form.
+ *
+ * @returns {AnimationFormHookReturn} An object containing animation state and handlers.
+ */
 
-export const animationFormHook = ({ onClose }: { onClose: () => void }) => {
+export const UseAnimationFormHook = ({
+  onClose,
+}: {
+  onClose: () => void;
+}): AnimationFormHookReturn => {
   const formRef = useRef<HTMLDivElement>(null);
 
   const [isClosing, setIsClosing] = useState(false);
