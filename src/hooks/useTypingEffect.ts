@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
  *   - `visibleText`: The current visible portion of the text.
  *   - `fullText`: The full text being typed and deleted.
  */
-export const useTypingEffect = () => {
+export const useTypingEffect = (): object => {
   const [visibleText, setVisibleText] = useState<string>(""); // Holds the currently visible portion of the text.
   const [isDeleting, setIsDeleting] = useState<boolean>(false); // Tracks whether the text is being deleted.
   const fullText: string = "Hola, soy Dylan"; // The full text to display.
