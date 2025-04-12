@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { OpenModalHookReturn } from "@/types";
+import { OpenModalHookReturn } from "@types";
 /**
  * Custom hook for managing the state of a modal.
  *
