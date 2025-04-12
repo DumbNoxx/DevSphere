@@ -1,4 +1,4 @@
-import { useFormHook } from "@/hooks/useFormHook";
+import { useFormHook } from "@hooks";
 
 export const FormContactModal = () => {
   const {
@@ -22,7 +22,7 @@ export const FormContactModal = () => {
           Contactame
         </h2>
         <h3 className="mb-6 text-stone-400 sm:w-80 my-auto">
-          Rellene el formulario para ponerse en contacto conmigo.
+          Rellena el formulario para ponerte en contacto conmigo.
         </h3>
         <form onSubmit={handleSubmit} className="flex flex-col space-y-1.5">
           <label
@@ -32,7 +32,7 @@ export const FormContactModal = () => {
           >
             Nombre
             <span className="text-[0.6rem] md:text-[0.8rem] text-stone-400 my-auto mb-[3px]">
-              Para mayor gestion puedes colocar tu nombre completo.
+              Para mayor gestión puedes colocar tu nombre completo.
             </span>
           </label>
           <input
@@ -70,7 +70,7 @@ export const FormContactModal = () => {
           >
             Empresa
             <span className="text-[0.6rem] text-stone-400 md:text-[0.8rem]">
-              Si no tienes empresa puedes dejar este campo vacio.
+              Si no tienes empresa puedes dejar este campo vacío.
             </span>
           </label>
           <input
@@ -91,7 +91,7 @@ export const FormContactModal = () => {
           </label>
           <textarea
             name="message"
-            placeholder="Tu mensaje (max 350 characteres)"
+            placeholder="Tu mensaje (máx. 350 caracteres)"
             className="border border-stone-800 focus:border-white rounded-lg py-1.5 px-3 ml-1 w-65 -mt-2
              placeholder-stone-400 min-h-30 resize-y sm:w-85 md:w-95 lg:w-110"
             maxLength={350}
@@ -111,14 +111,14 @@ export const FormContactModal = () => {
               onChange={handleChange}
               className="mr-2 checked:border-transparent"
             />
-            ¿Quieres recibir notificaciones sobre alguna publicacion hecha en mi
-            linkedIn?
+            ¿Quieres recibir notificaciones sobre alguna publicación hecha en mi
+            LinkedIn?
           </label>
           <button
             type="submit"
             disabled={isSubmitting}
             className="w-60 text-black mx-auto border py-2 rounded-lg bg-white
-            hover:bg-stone-200 transition-colos duration-400 cursor-pointer
+            hover:bg-stone-200 transition-colors duration-400 cursor-pointer
             md:text-xl"
           >
             {isSubmitting ? "Enviando..." : "Enviar"}

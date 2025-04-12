@@ -1,4 +1,4 @@
-import { useSkillsHook } from "@/hooks/useSkillsHook";
+import { useSkillsHook } from "@hooks";
 
 const Array = ({ nombre }: { nombre: string }) => {
   return (
@@ -11,7 +11,7 @@ const Array = ({ nombre }: { nombre: string }) => {
 };
 
 export const Skills = () => {
-  const [array] = useSkillsHook();
+  const array = useSkillsHook();
   return (
     <>
       <section className="p-6">

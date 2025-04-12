@@ -1,5 +1,5 @@
-import { mailBlack, github, linkedin } from "@/assets/images/indexImages";
-import { FooterContactProds } from "@/interfaces/index.interface";
+import { mailBlack, github, linkedin } from "@assets";
+import { FooterContactProds } from "@interfaces";
 
 export const FooterContacts = ({ openModal }: FooterContactProds) => {
   return (
@@ -30,7 +30,7 @@ export const FooterContacts = ({ openModal }: FooterContactProds) => {
               <figure>
                 <img src={mailBlack} alt="email" className="mr-2 md:w-4.5" />
               </figure>
-              Enviame un mail
+              Envíame un mail
             </button>
           </div>
           <div

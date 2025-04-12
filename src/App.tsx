@@ -8,9 +8,8 @@ import {
   Spider,
   FormContactModal,
   Modal,
-} from "@/components/indexComponentPage";
-import { useIsLargeScreenHook } from "@/hooks/useIsLargeScreen";
-import { useOpenModal } from "@/hooks/useOpenModal";
+} from "@components";
+import { useIsLargeScreenHook, useOpenModal } from "@hooks";
 
 export const App = () => {
   document.body.style.overflowX = "hidden";

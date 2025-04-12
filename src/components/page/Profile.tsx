@@ -1,11 +1,5 @@
-import { useTypingEffect } from "@/hooks/useTypingEffect";
-import {
-  github,
-  linkedin,
-  instagram,
-  dylan,
-  arrowRight,
-} from "@/assets/images/indexImages";
+import { useTypingEffect } from "@hooks";
+import { github, linkedin, instagram, dylan, arrowRight } from "@assets";
 export const Profile = () => {
   const { visibleText, fullText } = useTypingEffect();
   return (
@@ -31,7 +25,7 @@ export const Profile = () => {
               className="text-2xl sm:text-2xl md:text-md lg:text-3xl mt-3 text-stone-400
           2xl:text-6xl"
             >
-              Desarrollador Web & Diseñador PixelArt
+              Desarrollador Web & Desarrollador Móvil.
             </h2>
             <h3
               className="mt-3 text-base w-80 text-stone-400 sm:text-md md:text-sm
@@ -54,7 +48,7 @@ export const Profile = () => {
                   <img
                     src={arrowRight}
                     alt="flecha"
-                    className="w-5 ml-1 2xl:w-6 2xl:mt-[0.rem] "
+                    className="w-5 ml-1 lg:mt-[0.2rem] 2xl:w-6 2xl:mt-[0.rem] "
                   />
                 </figure>
               </a>
@@ -91,7 +85,7 @@ export const Profile = () => {
                 <a href="https://www.instagram.com/dumb.nox" target="_blank">
                   <img
                     src={instagram}
-                    alt="email"
+                    alt="instagram"
                     className="w-8 p-1.5 hover:bg-stone-900 transition-colors duration-400
                   rounded-md 2xl:w-10"
                   />

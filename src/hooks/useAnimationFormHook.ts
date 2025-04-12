@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { AnimationFormHookReturn } from "@/types/indexTypes";
+import { AnimationFormHookReturn } from "@/types";
 /**
  * Custom hook for managing the animation state of a form.
  *

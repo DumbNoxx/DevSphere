@@ -1,4 +1,4 @@
-import { useCanvasRef } from "@/hooks/useCanvasRef";
+import { useCanvasRef } from "@hooks";
 
 export const Spider = () => {
   const { canvasRef } = useCanvasRef();

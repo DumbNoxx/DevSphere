@@ -11,15 +11,16 @@ import {
   react,
   nodejs,
   tailwind,
-} from "@/assets/images/indexImages";
-
+} from "@assets";
+import { Skill } from "@interfaces";
 /**
  * Custom hook that provides a list of skills with their associated properties.
  * Each skill includes an identifier, name, image, background colors, and optionally a text color.
  *
  * @returns {Array} An array containing the list of skills.
  */
-export const useSkillsHook = () => {
+
+export const useSkillsHook = (): Array<Skill> => {
   /**
    * List of available skills.
    * Each object in the array represents a skill with the following properties:
@@ -29,7 +30,7 @@ export const useSkillsHook = () => {
    * - colors: CSS class for the background color on hover.
    * - textColor (optional): CSS class for the text color on hover.
    */
-  const listadoSkill = [
+  const listadoSkill: Array<Skill> = [
     {
       id: 0,
       nombre: "Python",
@@ -76,5 +77,5 @@ export const useSkillsHook = () => {
   const [array] = useState(listadoSkill);
 
   // Returns the list of skills.
-  return [array];
+  return array;
 };

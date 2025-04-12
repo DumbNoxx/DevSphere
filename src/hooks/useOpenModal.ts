@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { OpenModalHookReturn } from "@/types/indexTypes";
+import { OpenModalHookReturn } from "@/types";
 /**
  * Custom hook for managing the state of a modal.
  *
@@ -16,7 +16,7 @@ export const useOpenModal = (): OpenModalHookReturn => {
       document.body.classList.remove("no-scroll");
     }
 
-    // Limpieza: elimina la clase cuando el componente se desmonta
+    // Cleanup: removes the class when the component is unmounted
     return () => {
       document.body.classList.remove("no-scroll");
     };

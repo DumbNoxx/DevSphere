@@ -10,12 +10,13 @@
     "baseUrl": ".",
     // Alias
     "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@helpers/*": ["src/helpers/*"],
-      "@interfaces/*": ["src/interfaces/*"],
-      "@types/*": ["src/types/*"]
+      "@env": ["src/env"],
+      "@assets": ["src/assets"],
+      "@components": ["src/components"],
+      "@hooks": ["src/hooks"],
+      "@helpers": ["src/helpers"],
+      "@interfaces": ["src/interfaces"],
+      "@types": ["src/types"]
     },
 
     /* Bundler mode */

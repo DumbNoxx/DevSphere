@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { UseSendEmailReturn, FormDatas } from "@/interfaces/index.interface";
-import { ENV } from "@/env";
+import { UseSendEmailReturn, FormDatas } from "@interfaces";
+import { ENV } from "@env";
 
 const API = ENV.PUBLIC.API_URL;
 
