@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
+import { TypingEffectReturn } from "@interfaces";
 
 /**
  * Custom hook to create a typing effect for a given text.
  * It types out the text character by character, then deletes it, and repeats the process.
  *
- * @returns {Object} - An object containing:
+ * @returns {TypingEffectReturn} - An object containing:
  *   - `visibleText`: The current visible portion of the text.
  *   - `fullText`: The full text being typed and deleted.
  */
-export const useTypingEffect = (): object => {
+export const useTypingEffect = (): TypingEffectReturn => {
   const [visibleText, setVisibleText] = useState<string>(""); // Holds the currently visible portion of the text.
   const [isDeleting, setIsDeleting] = useState<boolean>(false); // Tracks whether the text is being deleted.
   const fullText: string = "Hola, soy Dylan"; // The full text to display.
