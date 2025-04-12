@@ -1,11 +1,34 @@
 import { useState } from "react";
 import {
-  python, ts, js, c,
-  cpp, git, bash, postgreSQL,
-  react, nodejs, tailwind,
+  python,
+  ts,
+  js,
+  c,
+  cpp,
+  git,
+  bash,
+  postgreSQL,
+  react,
+  nodejs,
+  tailwind,
 } from "@/assets/images/indexImages";
 
-export const skillsHook = () => {
+/**
+ * Custom hook that provides a list of skills with their associated properties.
+ * Each skill includes an identifier, name, image, background colors, and optionally a text color.
+ *
+ * @returns {Array} An array containing the list of skills.
+ */
+export const useSkillsHook = () => {
+  /**
+   * List of available skills.
+   * Each object in the array represents a skill with the following properties:
+   * - id: Unique identifier for the skill.
+   * - nombre: Name of the skill.
+   * - image: Path to the image associated with the skill.
+   * - colors: CSS class for the background color on hover.
+   * - textColor (optional): CSS class for the text color on hover.
+   */
   const listadoSkill = [
     {
       id: 0,
@@ -48,7 +71,10 @@ export const skillsHook = () => {
       textColor: "hover:text-black",
     },
   ];
-  const [array, setArray] = useState(listadoSkill);
-  setArray;
+
+  // State containing the list of skills.
+  const [array] = useState(listadoSkill);
+
+  // Returns the list of skills.
   return [array];
 };

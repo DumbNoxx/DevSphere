@@ -1,4 +1,4 @@
-import TypingEffect from "@/hooks/TypingEffect";
+import { useTypingEffect } from "@/hooks/useTypingEffect";
 import {
   github,
   linkedin,
@@ -6,8 +6,8 @@ import {
   dylan,
   arrowRight,
 } from "@/assets/images/indexImages";
-
 export const Profile = () => {
+  const { visibleText, fullText } = useTypingEffect();
   return (
     <>
       <header className="p-8 md:mt-12 lg:mt-40">
@@ -21,7 +21,12 @@ export const Profile = () => {
         </span>
         <section>
           <article>
-            <TypingEffect />
+            <h1 className="Nombre">
+              {visibleText}
+              <span style={{ opacity: 0 }}>
+                {fullText.slice(visibleText.length)}
+              </span>
+            </h1>{" "}
             <h2
               className="text-2xl sm:text-2xl md:text-md lg:text-3xl mt-3 text-stone-400
           2xl:text-6xl"

@@ -1,4 +1,4 @@
-import { formHook } from "@/hooks/formHook";
+import { useFormHook } from "@/hooks/useFormHook";
 
 export const FormContactModal = () => {
   const {
@@ -8,7 +8,7 @@ export const FormContactModal = () => {
     handleSubmit,
     isSubmitting,
     errorMessage,
-  } = formHook();
+  } = useFormHook();
   return (
     <>
       <div

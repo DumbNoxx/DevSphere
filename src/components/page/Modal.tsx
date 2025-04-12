@@ -1,8 +1,8 @@
 import { ModalProps } from "@/interfaces/index.interface";
-import { animationFormHook } from "@/hooks/animationFormHook";
+import { UseAnimationFormHook } from "@/hooks/useAnimationFormHook";
 
 export const Modal = ({ onClose, children }: ModalProps) => {
-  const { formRef, handleClose } = animationFormHook({ onClose });
+  const { formRef, handleClose } = UseAnimationFormHook({ onClose });
   return (
     <>
       <section className="fixed inset-0 bg-opacity-50 backdrop-blur-sm z-50 flex justify-center items-center">

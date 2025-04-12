@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
-import { Spider } from "@/types/indexTypeSpider";
+import { Spider } from "@/types/indexTypes";
 import { spawn, resizeCanvas, many } from "@/helpers/indexSpider";
 
-export const spiderEffect = () => {
+export const useSpiderEffect = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {

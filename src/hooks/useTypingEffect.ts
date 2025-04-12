@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const TypingEffect: React.FC = () => {
+export const useTypingEffect = () => {
   const [visibleText, setVisibleText] = useState<string>("");
   const [isDeleting, setIsDeleting] = useState<boolean>(false);
   const fullText: string = "Hola, soy Dylan";
@@ -38,13 +38,8 @@ const TypingEffect: React.FC = () => {
     deletingSpeed,
     pauseDuration,
   ]);
-
-  return (
-    <h1 className="Nombre">
-      {visibleText}
-      <span style={{ opacity: 0 }}>{fullText.slice(visibleText.length)}</span>
-    </h1>
-  );
+  return {
+    visibleText,
+    fullText,
+  };
 };
-
-export default TypingEffect;
