@@ -1,1 +1,1 @@
-export * from "./TypingEffectReturn";
+export type { TypingEffectReturn } from "./TypingEffectReturn";

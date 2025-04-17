@@ -2,7 +2,7 @@ import { useState } from "react";
 import { UseSendEmailReturn, FormDatas } from "@interfaces";
 import { ENV } from "@env";
 
-const API = ENV.PUBLIC.API_URL;
+const API: string = ENV.PUBLIC.API_URL;
 
 /**
  * Utility function to sanitize input strings by removing non-alphabetic characters.
@@ -11,7 +11,7 @@ const API = ENV.PUBLIC.API_URL;
  * @returns {string} - The sanitized string.
  */
 const regexInput = (str: string): string => {
-  const regex = /[^a-zA-Z]/g;
+  const regex: RegExp = /[^a-zA-Z]/g;
   return str.trim().replace(regex, "");
 };
 
@@ -38,7 +38,7 @@ export const useFormHook = (): UseSendEmailReturn => {
    *
    * @type {FormDatas}
    */
-  const initialForm = {
+  const initialForm: FormDatas = {
     name: "",
     email: "",
     enterprice: "",

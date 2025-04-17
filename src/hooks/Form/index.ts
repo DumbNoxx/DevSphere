@@ -1,2 +1,2 @@
-export * from "./useAnimationFormHook";
-export * from "./useFormHook";
+export { UseAnimationFormHook } from "./useAnimationFormHook";
+export { useFormHook } from "./useFormHook";

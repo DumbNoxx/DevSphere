@@ -1,2 +1,2 @@
-export * from "./Modal";
-export * from "./Spider";
+export type { AnimationFormHookReturn, OpenModalHookReturn } from "./Modal";
+export type { Spider } from "./Spider";

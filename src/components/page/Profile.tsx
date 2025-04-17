@@ -1,5 +1,6 @@
 import { useTypingEffect } from "@hooks";
 import { github, linkedin, instagram, dylan, arrowRight } from "@assets";
+
 export const Profile = () => {
   const { visibleText, fullText } = useTypingEffect();
   return (

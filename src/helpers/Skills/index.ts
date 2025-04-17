@@ -1,1 +1,1 @@
-export * from "./listSkill";
+export { listSkill } from "./listSkill";

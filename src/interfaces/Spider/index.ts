@@ -1,1 +1,1 @@
-export * from "./useCanvasRefReturn";
+export type { UseCanvasRefReturn } from "./useCanvasRefReturn";

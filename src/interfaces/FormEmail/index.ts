@@ -1,2 +1,2 @@
-export * from "./formEmail.interface";
-export * from "./useSendEmailReturn.interface";
+export type { FormDatas } from "./formEmail.interface";
+export type { UseSendEmailReturn } from "./useSendEmailReturn.interface";

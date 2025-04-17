@@ -1,1 +1,1 @@
-export * from "./Skill";
+export type { Skill } from "./Skill";

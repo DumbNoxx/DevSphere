@@ -4,8 +4,8 @@
 
 interface ImportMetaEnv {
   // Represents environment variables provided by Vite.
-  // `VITE_API` is a readonly string that stores the API endpoint URL.
-  readonly VITE_API: string;
+  // `VITE_API_SEND_MESSAGE` is a readonly string that stores the API endpoint URL.
+  readonly VITE_API_SEND_MESSAGE: string;
 }
 
 interface ImportMeta {
