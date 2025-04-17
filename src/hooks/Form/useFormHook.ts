@@ -11,8 +11,8 @@ const API: string = ENV.PUBLIC.API_URL;
  * @returns {string} - The sanitized string.
  */
 const regexInput = (str: string): string => {
-  const regex: RegExp = /[^a-zA-Z]/g;
-  return str.trim().replace(regex, "");
+  const regex: RegExp = /[^\p{L} ]/gu;
+  return str.replace(regex, "");
 };
 
 /**
@@ -99,13 +99,20 @@ export const useFormHook = (): UseSendEmailReturn => {
     setIsSubmitting(true);
     setErrorMessage("");
 
+    const sanitizedFormData: FormDatas = {
+      ...formData,
+      name: formData.name.trim(),
+      enterprice: formData.enterprice.trim(),
+      message: formData.message.trim(),
+    };
+
     try {
       const response = await fetch(API, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(sanitizedFormData),
       });
       if (!response.ok) {
         throw new Error(`Error en la solicitud ${response.status}`);

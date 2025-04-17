@@ -15,12 +15,12 @@ export interface FormDatas {
   /**
    * (Optional) The name of the user's enterprise or company.
    */
-  enterprice?: string;
+  enterprice: string;
 
   /**
    * (Optional) A message provided by the user.
    */
-  message?: string;
+  message: string;
 
   /**
    * (Optional) A boolean indicating whether a checkbox is selected.
