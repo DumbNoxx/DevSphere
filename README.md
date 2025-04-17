@@ -7,7 +7,7 @@ Welcome to **DevSphere**, my personal portfolio built with **React** and **TypeS
 ## Screenshots 🖼️
 
 ![Screenshot](./src/assets/images/png/sspage2.png)  
-DevSphere homepage showcasing web development_
+DevSphere homepage showcasing web development\_
 
 ---
 
@@ -47,9 +47,11 @@ npm install
 ```
 
 3. Start the development server:
+
 ```bash
 npm run dev
 ```
+
 ---
 
 ## How to Contribute 🤝
@@ -76,6 +78,7 @@ Have a question or want to collaborate? Feel free to reach out!
 
 - **LinkedIn**: [Dylan Marcano](https://www.linkedin.com/in/dylan-marcano-994205266)
 - **DevSphere**: [DevSphere](https://nxus-dev-sphere.vercel.app/)
+- **Information**: [Documentation](https://dumbnoxx.github.io/DevSphere)
 
 ---
 
