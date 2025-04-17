@@ -95,6 +95,7 @@ export const useFormHook = (): UseSendEmailReturn => {
    * @returns {Promise<void>} - A promise that resolves when the submission is complete.
    */
   const handleSubmit = async (e: React.FormEvent): Promise<void> => {
+    console.log(formData.name);
     e.preventDefault();
     setIsSubmitting(true);
     setErrorMessage("");
