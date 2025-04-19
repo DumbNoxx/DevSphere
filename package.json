@@ -1,6 +1,6 @@
 {
   "name": "dev-sphere",
-  "private": true,
+  "private": false,
   "version": "2.2.7",
   "type": "module",
   "scripts": {
