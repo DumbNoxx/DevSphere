@@ -24,11 +24,15 @@ export const FooterContacts = ({ openModal }: FooterContactProds) => {
               onClick={openModal}
               className="flex bg-white py-2 px-4 rounded-lg !text-black
             !font-bold mt-7 mx-17 hover:bg-gray-200 transition-colors duration-400
-            sm:mx-50 md:mx-70 lg:mx-auto"
+            sm:mx-50 md:mx-70 lg:mx-auto cursor-pointer"
               id="email"
             >
               <figure>
-                <img src={mailBlack} alt="email" className="mr-2 md:w-4.5" />
+                <img
+                  src={mailBlack}
+                  alt="email"
+                  className="md:mt-[0.2rem] mr-2 md:w-4.5"
+                />
               </figure>
               {t("sendEmail")}
             </button>
