@@ -1,4 +1,4 @@
-import { inventech, github } from "@assets";
+import { palindromeChecker, github } from "@assets";
 import { useTranslation } from "react-i18next";
 
 export const ProjectOne = () => {
@@ -11,8 +11,8 @@ export const ProjectOne = () => {
           md:w-170 md:ml-7 lg:w-160 lg:h-70"
         >
           <img
-            src={inventech}
-            alt="inventech"
+            src={palindromeChecker}
+            alt="palindromeChecker"
             className="sm:w-120 md:w-170 lg:w-160 lg:h-70"
           />
         </figure>
@@ -25,7 +25,9 @@ export const ProjectOne = () => {
           >
             {t("badgeProject")} 1
           </span>
-          <h4 className="text-4xl text-white mt-5 sm:text-5xl">InvenTech</h4>
+          <h4 className="text-4xl text-white mt-5 sm:text-5xl">
+            Palindrome Checker
+          </h4>
           <p
             className="mt-2 w-80 text-stone-400 sm:text-2xl sm:w-120 md:w-170
             lg:w-150"
@@ -34,27 +36,36 @@ export const ProjectOne = () => {
           </p>
           <div className="flex flex-row space-x-2.5 mt-2.5">
             <a
-              href="https://www.python.org/"
-              target="_blank"
-              className="!text-stone-400  py-0.2 px-3 rounded-2xl border border-stone-800
-                 hover:bg-stone-900 transition-colors duration-400
-                 md:text-lg"
-            >
-              Python
-            </a>
-            <a
-              href="https://customtkinter.tomschimansky.com/"
+              href="https://developer.mozilla.org/es/docs/Web/HTML"
               target="_blank"
               className="!text-stone-400  py-0.2 px-3 rounded-2xl border border-stone-800
                  hover:bg-stone-900 transition-colors duration-400
                  md:text-md"
             >
-              Custom Tkinter
+              HTML5
+            </a>
+            <a
+              href="https://developer.mozilla.org/es/docs/Web/CSS"
+              target="_blank"
+              className="!text-stone-400  py-0.2 px-3 rounded-2xl border border-stone-800
+                 hover:bg-stone-900 transition-colors duration-400
+                 md:text-md"
+            >
+              CSS
+            </a>
+            <a
+              href="https://developer.mozilla.org/es/docs/Web/javascript"
+              target="_blank"
+              className="!text-stone-400  py-0.2 px-3 rounded-2xl border border-stone-800
+                 hover:bg-stone-900 transition-colors duration-400
+                 md:text-lg"
+            >
+              JavaScript
             </a>
           </div>
           <div className="flex flex-row space-x-7 mt-4">
             <a
-              href="https://github.com/DumbNoxx/InvenTech2"
+              href="https://github.com/DumbNoxx/Palindrome-Checker"
               target="_blank"
               className="flex border border-stone-800
                  rounded-md px-6 hover:bg-stone-900 transition-colors

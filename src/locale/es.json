@@ -10,7 +10,7 @@
   "btnCode": "Código",
   "descriptionProjects": "Explora una selección de mis trabajos más recientes",
   "badgeProject": "Proyecto",
-  "descriptionProjectOne": "InvenTech es una aplicación de escritorio para gestión de inventarios. Actualmente incompleta por algunos desafíos técnicos, pero su finalización sigue siendo prioridad en mi plan de desarrollo.",
+  "descriptionProjectOne": "Palindrome Checker es una app web en JavaScript que detecta palíndromos con precisión. La versión actual incluye la funcionalidad básica, con mejoras planeadas para futuras actualizaciones.",
   "desctiptionProjectTwo": "¡Mi portafolio no podía faltar! Incluye un backend personalizado (para contactarme directamente) y demuestra mi experiencia en frontend, donde el diseño se une a la funcionalidad.",
   "skills": "Tecnologías",
   "descriptionSkills": "Tecnologías y Herramientas que Domino",
@@ -31,8 +31,8 @@
   "placeholderName": "Dylan Marcano",
   "placeholderEmail": "ejemplo@ejemplo.com",
   "placeholderEnterprice": "Razón social",
-  "placeholderMessage": "Escribe tu mensaje (350 caracteres maximos)",
+  "placeholderMessage": "Escribe tu mensaje (350 caracteres máximos)",
   "sendForm": "Enviar",
   "sendingForm": "Enviando...",
-  "errorMessage": "Error al subir la informacion al servidor."
+  "errorMessage": "Error al subir la información al servidor."
 }
