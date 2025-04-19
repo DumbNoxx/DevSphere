@@ -17,6 +17,7 @@ DevSphere homepage showcasing web development\_
 - **Featured Projects**: Highlights of my most relevant work.
 - **Contact Section**: Easy access for collaborations or inquiries.
 - **Cutting-Edge Technologies**: Built with React, TypeScript, and the latest tools.
+- **Multilingual Support**: Available in English and Spanish, powered by I18n.
 
 ---
 
