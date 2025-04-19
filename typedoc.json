@@ -8,5 +8,6 @@
   "excludeExternals": true,
   "hideGenerator": true,
   "tsconfig": "tsconfig.json",
-  "entryPointStrategy": "expand"
+  "entryPointStrategy": "expand",
+  "gitRevision": "main"
 }
