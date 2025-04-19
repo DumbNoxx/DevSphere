@@ -1,6 +1,8 @@
 import { useFormHook } from "@hooks";
+import { useTranslation } from "react-i18next";
 
 export const FormContactModal = () => {
+  const { t } = useTranslation();
   const {
     formData,
     handleChange,
@@ -19,10 +21,10 @@ export const FormContactModal = () => {
           className="text-3xl lg:text-3xl text-white
           sm:text-4xl my-auto"
         >
-          Contactame
+          {t("titleForm")}
         </h2>
         <h3 className="mb-6 text-stone-400 sm:w-80 my-auto">
-          Rellena el formulario para ponerte en contacto conmigo.
+          {t("subTitleForm")}
         </h3>
         <form onSubmit={handleSubmit} className="flex flex-col space-y-1.5">
           <label
@@ -30,9 +32,9 @@ export const FormContactModal = () => {
             className="flex flex-col text-white
             md:text-base my-auto"
           >
-            Nombre
+            {t("name")}
             <span className="text-[0.6rem] md:text-[0.8rem] text-stone-400 my-auto mb-[3px]">
-              Para mayor gestión puedes colocar tu nombre completo.
+              {t("descriptionName")}
             </span>
           </label>
           <input
@@ -40,7 +42,7 @@ export const FormContactModal = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="Tu nombre"
+            placeholder={t("placeholderName")}
             id="nameForm"
             className="border border-stone-800 focus:border-white rounded-lg py-1.5 px-3 ml-1 w-65
              placeholder-stone-400 sm:w-85 md:w-95 lg:w-110"
@@ -50,7 +52,7 @@ export const FormContactModal = () => {
             htmlFor="email"
             className="text-white mb-3 md:text-xl lg:text-base my-auto"
           >
-            Email
+            {t("email")}
           </label>
           <input
             type="email"
@@ -59,7 +61,7 @@ export const FormContactModal = () => {
             onChange={handleChange}
             className="border border-stone-800 focus:border-white rounded-lg py-1.5 px-3 ml-1 w-65 -mt-2
              placeholder-stone-400 sm:w-85 md:w-95 lg:w-110"
-            placeholder="tu.email@example.com"
+            placeholder={t("placeholderEmail")}
             id="emailForm"
             required
           />
@@ -68,9 +70,9 @@ export const FormContactModal = () => {
             className="flex flex-col mb-3 text-white
             md:text-xl lg:text-base my-auto"
           >
-            Empresa
+            {t("enterprice")}
             <span className="text-[0.6rem] text-stone-400 md:text-[0.8rem]">
-              Si no tienes empresa puedes dejar este campo vacío.
+              {t("descriptionEnterprice")}
             </span>
           </label>
           <input
@@ -80,18 +82,18 @@ export const FormContactModal = () => {
             onChange={handleChange}
             className="border border-stone-800 focus:border-white rounded-lg py-1.5 px-3 ml-1 w-65 -mt-2
              placeholder-stone-400 sm:w-85 md:w-95 lg:w-110"
-            placeholder="Nombre de la empresa"
+            placeholder={t("placeholderEnterprice")}
             id="empresaForm"
           />
           <label
             htmlFor="message"
             className="text-white mb-3 md:text-xl lg:text-base"
           >
-            Mensaje
+            {t("message")}
           </label>
           <textarea
             name="message"
-            placeholder="Tu mensaje (máx. 350 caracteres)"
+            placeholder={t("placeholderMessage")}
             className="border border-stone-800 focus:border-white rounded-lg py-1.5 px-3 ml-1 w-65 -mt-2
              placeholder-stone-400 min-h-30 resize-y sm:w-85 md:w-95 lg:w-110"
             maxLength={350}
@@ -111,8 +113,7 @@ export const FormContactModal = () => {
               onChange={handleChange}
               className="mr-2 checked:border-transparent"
             />
-            ¿Quieres recibir notificaciones sobre alguna publicación hecha en mi
-            LinkedIn?
+            {t("checkBoxMessage")}
           </label>
           <button
             type="submit"
@@ -121,7 +122,7 @@ export const FormContactModal = () => {
             hover:bg-stone-200 transition-colors duration-400 cursor-pointer
             md:text-xl"
           >
-            {isSubmitting ? "Enviando..." : "Enviar"}
+            {isSubmitting ? t("sendingForm") : t("sendForm")}
           </button>
           {errorMessage && <p className="text-red-600">{errorMessage}</p>}
         </form>

@@ -13,10 +13,13 @@
       "@env": ["src/env"],
       "@assets": ["src/assets"],
       "@components": ["src/components"],
+      "@subcomponentsPage": ["src/components/page/subcomponents"],
       "@hooks": ["src/hooks"],
       "@helpers": ["src/helpers"],
       "@interfaces": ["src/interfaces"],
-      "@types": ["src/types"]
+      "@types": ["src/types"],
+      "@locale": ["src/locale"],
+      "@config": ["src/config"]
     },
 
     /* Bundler mode */

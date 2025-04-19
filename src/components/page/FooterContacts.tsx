@@ -1,7 +1,8 @@
 import { mailBlack, github, linkedin } from "@assets";
 import { FooterContactProds } from "@interfaces";
-
+import { useTranslation } from "react-i18next";
 export const FooterContacts = ({ openModal }: FooterContactProds) => {
+  const { t } = useTranslation();
   return (
     <>
       <section className="p-6">
@@ -9,14 +10,13 @@ export const FooterContacts = ({ openModal }: FooterContactProds) => {
           className="text-4xl text-white text-center w-80 sm:ml-14 sm:w-120
         md:ml-32 lg:text-5xl lg:mx-auto"
         >
-          ¿Interesado en trabajar juntos?
+          {t("contactInterest")}
         </h2>
         <h3
           className="mt-3 text-md text-center w-80 sm:w-120 sm:ml-14 md:ml-32
         lg:text-xl lg:mx-auto lg:mt-12"
         >
-          Estoy abierto a oportunidades freelance y proyectos interesantes.
-          Contáctame y hablemos sobre cómo puedo ayudarte.
+          {t("descriptionContact")}
         </h3>
         <article>
           <div className="flex flex-row lg:mt-5">
@@ -30,7 +30,7 @@ export const FooterContacts = ({ openModal }: FooterContactProds) => {
               <figure>
                 <img src={mailBlack} alt="email" className="mr-2 md:w-4.5" />
               </figure>
-              Envíame un mail
+              {t("sendEmail")}
             </button>
           </div>
           <div

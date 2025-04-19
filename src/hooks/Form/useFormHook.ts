@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { UseSendEmailReturn, FormDatas } from "@interfaces";
 import { ENV } from "@env";
+import { useTranslation } from "react-i18next";
 
 const API: string = ENV.PUBLIC.API_URL;
-
 /**
  * Utility function to sanitize input strings by removing non-alphabetic characters.
  *
@@ -33,6 +33,7 @@ const regexInput = (str: string): string => {
  *   - `errorMessage`: String containing any error message during submission.
  */
 export const useFormHook = (): UseSendEmailReturn => {
+  const { t } = useTranslation();
   /**
    * Initial state for the form fields.
    *
@@ -96,6 +97,7 @@ export const useFormHook = (): UseSendEmailReturn => {
    */
   const handleSubmit = async (e: React.FormEvent): Promise<void> => {
     console.log(formData.name);
+
     e.preventDefault();
     setIsSubmitting(true);
     setErrorMessage("");
@@ -121,7 +123,7 @@ export const useFormHook = (): UseSendEmailReturn => {
       setFormData(initialForm);
       alert("Email enviado");
     } catch (err) {
-      setErrorMessage("Hubo un problema al enviar los datos al servidor.");
+      setErrorMessage(t(""));
       alert("Se te han acabado las solicitudes a la api, intenta manana");
       console.error("Error:", err);
     } finally {

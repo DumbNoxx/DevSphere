@@ -18,6 +18,12 @@ export default defineConfig({
       "@helpers": path.resolve(__dirname, "./src/helpers"),
       "@interfaces": path.resolve(__dirname, "./src/interfaces"),
       "@types": path.resolve(__dirname, "./src/types"),
+      "@locale": path.resolve(__dirname, "./src/locale"),
+      "@config": path.resolve(__dirname, "./src/config"),
+      "@subcomponentsPage": path.resolve(
+        __dirname,
+        "./src/components/page/subcomponents"
+      ),
     },
   },
 });

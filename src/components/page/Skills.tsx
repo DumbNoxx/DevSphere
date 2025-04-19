@@ -1,4 +1,5 @@
 import { useSkillsHook } from "@hooks";
+import { useTranslation } from "react-i18next";
 
 const Array = ({ nombre }: { nombre: string }) => {
   return (
@@ -11,15 +12,16 @@ const Array = ({ nombre }: { nombre: string }) => {
 };
 
 export const Skills = () => {
+  const { t } = useTranslation();
   const array = useSkillsHook();
   return (
     <>
       <section className="p-6">
         <h2 className="text-4xl text-white md:text-5xl lg:text-center">
-          Habilidades
+          {t("skills")}
         </h2>
         <h3 className="text-xl text-stone-400 md:text-2xl lg:text-center lg:mb-10">
-          Tecnologías y herramientas que domino.
+          {t("descriptionSkills")}
         </h3>
         <article
           className="grid grid-cols-3 w-80 space-x-3 -mr-2 -pl-3 sm:grid-cols-4
@@ -37,7 +39,7 @@ export const Skills = () => {
                 <img
                   src={item.image}
                   alt=""
-                  className="w-5 mt-[0.1rem] mr-0.5"
+                  className="w-5 mt-[0.1rem] md:mt-[0.4rem] mr-0.5"
                 />{" "}
               </figure>
               <Array nombre={item.nombre}></Array>

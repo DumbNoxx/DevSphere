@@ -1,7 +1,10 @@
 import { useTypingEffect } from "@hooks";
 import { github, linkedin, instagram, dylan, arrowRight } from "@assets";
+import { useTranslation } from "react-i18next";
+import { ButtonTranslate } from "@subcomponentsPage";
 
 export const Profile = () => {
+  const { t } = useTranslation();
   const { visibleText, fullText } = useTypingEffect();
   return (
     <>
@@ -12,7 +15,7 @@ export const Profile = () => {
             cursor-pointer mb-3
             2xl:w-63 2xl:text-[1.3rem]"
         >
-          Disponible para proyectos
+          {t("badgeDisponiblity")}
         </span>
         <section>
           <article>
@@ -26,14 +29,13 @@ export const Profile = () => {
               className="text-2xl sm:text-2xl md:text-md lg:text-3xl mt-3 text-stone-400
           2xl:text-6xl"
             >
-              Desarrollador Web & Desarrollador Móvil.
+              {t("descriptionProfile")}
             </h2>
             <h3
               className="mt-3 text-base w-85 md:w-120 text-stone-400 sm:text-md md:text-sm
            lg:text-lg xl:text-lg 2xl:text-4xl"
             >
-              Creo experiencias digitales atractivas y funcionales, tanto para
-              la web moderna como para aplicaciones móviles nativas e híbridas.
+              {t("descriptionAvanProfile")}
             </h3>
             <nav className="mt-3 flex flex-row">
               <a
@@ -44,7 +46,7 @@ export const Profile = () => {
              hover:bg-gray-300 transition-colors duration-400
              2xl:w-48 2xl:text-2xl"
               >
-                Ver proyectos
+                {t("viewProjectsProfile")}
                 <figure>
                   <img
                     src={arrowRight}
@@ -59,7 +61,7 @@ export const Profile = () => {
              rounded-md hover:bg-stone-900 transition-colors duration-40
              2xl:text-2xl"
               >
-                Contacto
+                {t("contactProfile")}
               </a>
             </nav>
             <figure>
@@ -99,6 +101,7 @@ export const Profile = () => {
                 <img src={dylan} alt="dylan" className="w-lg h-sm -mt-16" />
               </div>
             </figure>
+            <ButtonTranslate />
           </article>
         </section>
       </header>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { TypingEffectReturn } from "@interfaces";
+import { useTranslation } from "react-i18next";
 
 /**
  * Custom React hook to create a typing effect for a given text.
@@ -12,12 +13,12 @@ import { TypingEffectReturn } from "@interfaces";
 export const useTypingEffect = (): TypingEffectReturn => {
   const [visibleText, setVisibleText] = useState<string>(""); // Holds the currently visible portion of the text.
   const [isDeleting, setIsDeleting] = useState<boolean>(false); // Tracks whether the text is being deleted.
-
+  const { t } = useTranslation();
   /**
    * The full text to display in the typing effect.
    * @type {string}
    */
-  const fullText: string = "Hola, soy Dylan";
+  const fullText: string = t("title");
 
   /**
    * Speed of typing each character in milliseconds.

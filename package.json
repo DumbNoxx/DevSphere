@@ -13,9 +13,11 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.0.13",
     "animejs": "^4.0.1",
+    "i18next": "^25.0.0",
     "lucide-react": "^0.479.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-i18next": "^15.4.1",
     "tailwindcss": "^4.0.13"
   },
   "devDependencies": {
