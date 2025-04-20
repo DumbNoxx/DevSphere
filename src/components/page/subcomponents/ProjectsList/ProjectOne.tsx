@@ -2,7 +2,8 @@ import { palindromeChecker, github } from "@assets";
 import { useTranslation } from "react-i18next";
 
 export const ProjectOne = () => {
-  const { t } = useTranslation();
+  const { i18n, t } = useTranslation();
+  const currentLanguage = i18n.language;
   return (
     <>
       <article className="lg:flex">
@@ -36,7 +37,11 @@ export const ProjectOne = () => {
           </p>
           <div className="flex flex-row space-x-2.5 mt-2.5">
             <a
-              href="https://developer.mozilla.org/es/docs/Web/HTML"
+              href={
+                currentLanguage === "en"
+                  ? "https://developer.mozilla.org/en-US/docs/Web/HTML"
+                  : "https://developer.mozilla.org/es/docs/Web/HTML"
+              }
               target="_blank"
               className="!text-stone-400  py-0.2 px-3 rounded-2xl border border-stone-800
                  hover:bg-stone-900 transition-colors duration-400
@@ -45,7 +50,11 @@ export const ProjectOne = () => {
               HTML5
             </a>
             <a
-              href="https://developer.mozilla.org/es/docs/Web/CSS"
+              href={
+                currentLanguage === "en"
+                  ? "https://developer.mozilla.org/en-US/docs/Web/CSS"
+                  : "https://developer.mozilla.org/es/docs/Web/CSS"
+              }
               target="_blank"
               className="!text-stone-400  py-0.2 px-3 rounded-2xl border border-stone-800
                  hover:bg-stone-900 transition-colors duration-400
@@ -54,7 +63,11 @@ export const ProjectOne = () => {
               CSS
             </a>
             <a
-              href="https://developer.mozilla.org/es/docs/Web/javascript"
+              href={
+                currentLanguage === "en"
+                  ? "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  : "https://developer.mozilla.org/es/docs/Web/JavaScript"
+              }
               target="_blank"
               className="!text-stone-400  py-0.2 px-3 rounded-2xl border border-stone-800
                  hover:bg-stone-900 transition-colors duration-400

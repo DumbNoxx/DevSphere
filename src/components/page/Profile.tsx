@@ -51,7 +51,7 @@ export const Profile = () => {
                   <img
                     src={arrowRight}
                     alt="flecha"
-                    className="w-5 ml-1 lg:mt-[0.2rem] 2xl:w-6 2xl:mt-[0.rem] "
+                    className="w-5 ml-1 mt-[0.2rem] lg:mt-[0.2rem] 2xl:w-6 2xl:mt-[0.1rem] "
                   />
                 </figure>
               </a>
@@ -63,6 +63,9 @@ export const Profile = () => {
               >
                 {t("contactProfile")}
               </a>
+              <div className="ml-2 mt-3">
+                <ButtonTranslate />
+              </div>
             </nav>
             <figure>
               <div className="flex flex-row mt-3 space-x-4">
@@ -101,7 +104,6 @@ export const Profile = () => {
                 <img src={dylan} alt="dylan" className="w-lg h-sm -mt-16" />
               </div>
             </figure>
-            <ButtonTranslate />
           </article>
         </section>
       </header>

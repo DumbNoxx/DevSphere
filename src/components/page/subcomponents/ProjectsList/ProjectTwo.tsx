@@ -1,7 +1,8 @@
 import { sspage, github } from "@assets";
 import { useTranslation } from "react-i18next";
 export const ProjectTwo = () => {
-  const { t } = useTranslation();
+  const { i18n, t } = useTranslation();
+  const currentLanguage = i18n.language;
   return (
     <>
       <article className="lg:flex mt-20">
@@ -33,7 +34,11 @@ export const ProjectTwo = () => {
           </p>
           <div className="grid grid-cols-3 sm:flex sm:flex-row space-x-2.5 space-y-3 sm:space-y-0 mt-2.5 w-80">
             <a
-              href="https://react.dev/"
+              href={
+                currentLanguage === "en"
+                  ? "https://react.dev/"
+                  : "https://es.react.dev/"
+              }
               target="_blank"
               className="!text-stone-400 text-center py-0.2 px-3 rounded-2xl border border-stone-800
                  hover:bg-stone-900 transition-colors duration-400
@@ -42,7 +47,11 @@ export const ProjectTwo = () => {
               React
             </a>
             <a
-              href="https://www.typescriptlang.org"
+              href={
+                currentLanguage === "en"
+                  ? "https://www.typescriptlang.org"
+                  : "https://www.typescriptlang.org/es/"
+              }
               target="_blank"
               className="!text-stone-400  py-0.2 px-3 rounded-2xl border border-stone-800
                  hover:bg-stone-900 transition-colors duration-400
@@ -51,7 +60,11 @@ export const ProjectTwo = () => {
               TypeScript
             </a>
             <a
-              href="https://nodejs.org"
+              href={
+                currentLanguage === "en"
+                  ? "https://nodejs.org/en"
+                  : "https://nodejs.org/es"
+              }
               target="_blank"
               className="!text-stone-400 text-center py-0.2 px-3 rounded-2xl border border-stone-800
                  hover:bg-stone-900 transition-colors duration-400

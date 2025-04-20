@@ -1,40 +1,49 @@
 import { useState } from "react";
 import { Skill } from "@interfaces";
-import { listSkill } from "@helpers";
+import { frontendList, backendList, toolsList } from "@helpers";
 
 /**
- * Custom React hook that provides a list of skills.
+ * Custom React hook that provides categorized lists of skills.
  *
- * This hook is designed to manage and return a predefined list of skills,
- * where each skill is represented as an object with specific properties.
- *
- * @module useSkillsHook
- *
- * @typedef {Object} Skill
- * @property {string} id - Unique identifier for the skill.
- * @property {string} nombre - Name of the skill.
- * @property {string} image - Path to the image associated with the skill.
- * @property {string} colors - CSS class for the background color on hover.
- * @property {string} [textColor] - Optional CSS class for the text color on hover.
- *
- * @returns {Skill[]} An array containing the list of skills.
+ * @returns {Object} An object containing categorized skill lists.
+ * @returns {Skill[]} frontend - List of frontend skills.
+ * @returns {Skill[]} backend - List of backend skills.
+ * @returns {Skill[]} tools - List of tools skills.
  */
-
-export const useSkillsHook = (): Array<Skill> => {
+export const useSkillsHook = () => {
   /**
-   * Predefined list of skills imported from a helper.
-   * Each skill object includes properties such as id, name, image, and colors.
+   * Predefined list of frontend skills.
+   * @type {Skill[]}
    */
-  const listSkills: Array<Skill> = listSkill.flat();
-
-  /**
-   * State hook to manage the list of skills.
-   * Although the state is not updated in this implementation, it ensures reactivity if needed in the future.
-   */
-  const [array] = useState(listSkills);
+  const frontedLists: Array<Skill> = frontendList;
 
   /**
-   * Returns the list of skills.
+   * Predefined list of backend skills.
+   * @type {Skill[]}
    */
-  return array;
+  const backendLists: Array<Skill> = backendList;
+
+  /**
+   * Predefined list of tools skills.
+   * @type {Skill[]}
+   */
+  const toolsLists: Array<Skill> = toolsList;
+
+  // State hook to manage the list of frontend skills.
+  const [frontend]: [Skill[], React.Dispatch<React.SetStateAction<Skill[]>>] =
+    useState(frontedLists);
+
+  // State hook to manage the list of backend skills.
+  const [backend]: [Skill[], React.Dispatch<React.SetStateAction<Skill[]>>] =
+    useState(backendLists);
+
+  // State hook to manage the list of tools skills.
+  const [tools]: [Skill[], React.Dispatch<React.SetStateAction<Skill[]>>] =
+    useState(toolsLists);
+
+  return {
+    frontend,
+    backend,
+    tools,
+  };
 };

@@ -40,9 +40,9 @@ i18n.use(initReactI18next).init({
   },
   /**
    * Default language for the application.
-   * @default "es"
+   * @default "en"
    */
-  lng: "es",
+  lng: "en",
   /**
    * Fallback language if the selected language is unavailable.
    * @default "en"

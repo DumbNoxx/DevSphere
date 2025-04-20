@@ -1,6 +1,6 @@
 export interface Skill {
   id: number;
-  nombre: string;
+  name: string;
   image: string;
   colors: string;
   textColor?: string;

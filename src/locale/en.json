@@ -8,12 +8,12 @@
   "contactProfile": "Contact",
   "projectsFea": "Featured Projects",
   "btnCode": "Code",
-  "descriptionProjects": "Explore a curated showcase of my latest work",
+  "descriptionProjects": "Explore a curated showcase of my latest work.",
   "badgeProject": "Project",
   "descriptionProjectOne": "Palindrome Checker is a JavaScript web app that detects palindromes with precision. The current version covers core functionality, with planned enhancements for future updates.",
   "desctiptionProjectTwo": "Of course, my own portfolio couldn’t be left out! It features a custom-built backend (to let you email me directly) and serves as a showcase of my frontend expertise—where design meets functionality.",
-  "skills": "Stack",
-  "descriptionSkills": "Technologies & Tools I Master",
+  "skills": "Full-Stack",
+  "descriptionSkills": "Technologies & Tools I Master.",
   "contactInterest": "Interested in working together?",
   "descriptionContact": "I'm open to freelance opportunities and interesting projects. Contact me, and let's discuss how I can help you.",
   "sendEmail": "Send me an email",
@@ -34,6 +34,5 @@
   "placeholderMessage": "Type your message (350 characters max)",
   "sendForm": "Send",
   "sendingForm": "Sending...",
-  "errorMessage": "Failed to submit data to the server.",
-  "messageSend": ""
+  "errorMessage": "Failed to submit data to the server."
 }
