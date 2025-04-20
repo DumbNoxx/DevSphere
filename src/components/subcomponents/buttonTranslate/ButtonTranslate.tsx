@@ -7,7 +7,9 @@ export const ButtonTranslate = () => {
   return (
     <div className="mx-auto">
       <button
-        className="border border-stone-800 cursor-pointer w-10 py-1.5 rounded-lg hover:bg-stone-800 transition-colors duration-400"
+        className="border border-stone-800 cursor-pointer 
+        w-10 py-1.5 rounded-lg hover:bg-stone-800 transition-colors 
+        duration-400"
         onClick={() =>
           currentLanguage === "es"
             ? i18n.changeLanguage("en")

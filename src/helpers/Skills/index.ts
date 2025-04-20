@@ -1,3 +1,3 @@
-export { frontendList } from "./frontendList";
-export { backendList } from "./backendList";
-export { toolsList } from "./toolsList";
+export { frontendList } from "./frontendList.helper";
+export { backendList } from "./backendList.helper";
+export { toolsList } from "./toolsList.helper";

@@ -24,6 +24,10 @@ export default defineConfig({
         __dirname,
         "./src/components/page/subcomponents"
       ),
+      "@subcomponentsG": path.resolve(
+        __dirname,
+        "./src/components/subcomponents"
+      ),
     },
   },
 });

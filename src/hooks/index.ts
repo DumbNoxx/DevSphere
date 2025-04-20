@@ -3,3 +3,4 @@ export * from "./Modal";
 export * from "./Skills";
 export * from "./Spider";
 export * from "./Typing";
+export { useTab } from "./Tabs";

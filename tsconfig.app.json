@@ -13,6 +13,7 @@
       "@env": ["src/env"],
       "@assets": ["src/assets"],
       "@components": ["src/components"],
+      "@subcomponentsG": ["src/components/subcomponents"],
       "@subcomponentsPage": ["src/components/page/subcomponents"],
       "@hooks": ["src/hooks"],
       "@helpers": ["src/helpers"],

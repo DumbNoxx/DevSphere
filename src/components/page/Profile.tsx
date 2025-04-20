@@ -1,7 +1,7 @@
 import { useTypingEffect } from "@hooks";
 import { github, linkedin, instagram, dylan, arrowRight } from "@assets";
 import { useTranslation } from "react-i18next";
-import { ButtonTranslate } from "@subcomponentsPage";
+import { ButtonTranslate } from "@subcomponentsG";
 
 export const Profile = () => {
   const { t } = useTranslation();

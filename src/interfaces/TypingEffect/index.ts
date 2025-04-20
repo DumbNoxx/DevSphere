@@ -1,1 +1,1 @@
-export type { TypingEffectReturn } from "./TypingEffectReturn";
+export type { TypingEffectReturn } from "./TypingEffectReturn.interface";
