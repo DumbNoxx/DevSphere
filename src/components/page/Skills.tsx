@@ -5,9 +5,9 @@ import { Tab } from "@subcomponentsG";
 export const Skills = () => {
   const { t } = useTranslation();
   const items = [
-    { title: "Frontend", content: <FrontendSkills /> },
-    { title: "Backend", content: <BackendSkills /> },
-    { title: "Tools", content: <ToolsSkills /> },
+    { title: "Frontend", content: <FrontendSkills />, color: "#39ff14" },
+    { title: "Backend", content: <BackendSkills />, color: "#6e55b2" },
+    { title: "Tools", content: <ToolsSkills />, color: "#e5802d" },
   ];
   return (
     <>
@@ -18,7 +18,11 @@ export const Skills = () => {
         <h3 className="text-xl text-stone-400 md:text-2xl lg:text-center lg:mb-10">
           {t("descriptionSkills")}
         </h3>
-        <Tab config={{ items }} />
+        {items.map((item) => (
+          <div className={`bg-[${item.color}]`}>
+            <Tab config={{ items }} />
+          </div>
+        ))}
       </section>
     </>
   );

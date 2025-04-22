@@ -5,6 +5,7 @@ export interface TabItem {
   content: string | React.JSX.Element;
   disable?: boolean;
   icon?: string;
+  color?: string;
 }
 
 export interface TabConfig {

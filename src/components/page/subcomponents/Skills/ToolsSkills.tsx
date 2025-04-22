@@ -13,7 +13,12 @@ export const ToolsSkills = () => {
           Tools
         </h4>
         <figure>
-          <NeonSVG src={tool} alt="Tools" color={color} />
+          <NeonSVG
+            src={tool}
+            alt="Tools"
+            color={color}
+            className="w-24 mx-auto mb-8"
+          />
         </figure>
         <div
           className="grid w-80 space-x-3 -mr-2 -pl-3

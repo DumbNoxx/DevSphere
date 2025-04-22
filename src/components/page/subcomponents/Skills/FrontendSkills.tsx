@@ -14,7 +14,12 @@ export const FrontendSkills = () => {
           Frontend Stack
         </h4>
         <figure>
-          <NeonSVG src={front} alt="Frontend" color={color} />
+          <NeonSVG
+            src={front}
+            alt="Frontend"
+            color={color}
+            className="w-24 mx-auto mb-8"
+          />
         </figure>
         <div
           className="grid grid-cols-3 w-80 space-x-3 -mr-2 -pl-3 sm:grid-cols-4

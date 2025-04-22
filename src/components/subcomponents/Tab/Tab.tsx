@@ -9,23 +9,29 @@ export const Tab = ({ config }: PropsTabs) => {
   return (
     <>
       <div className="border rounded-3xl p-4 pb-8">
-        <div className="flex space-x-9 mb-4 justify-center">
+        <div className={`flex space-x-9 mb-4 justify-center `}>
           {tabs.map((tab, i) => (
-            <button
-              key={i}
-              onClick={() => setActiveTabs(i)}
-              disabled={tab.disable}
-              className={`py-1 px-3 rounded ${
-                i === activeTab
-                  ? "bg-stone-800 text-white"
-                  : "bg-white text-black hover:bg-stone-700 transition-colors duration-400"
-              }`}
-            >
-              {tab.title}
-            </button>
+            <div key={i} className="relative">
+              <div
+                className={`${
+                  i === activeTab ? "absolute inset-0 blur-lg " : ""
+                }`}
+                style={{ backgroundColor: tab.color, zIndex: -1 }}
+              ></div>
+              <button
+                onClick={() => setActiveTabs(i)}
+                disabled={tab.disable}
+                className={`py-1 px-3 rounded ${
+                  i === activeTab
+                    ? "bg-transparent text-white"
+                    : `bg-white text-black hover:bg-[${tab.color}]`
+                }`}
+              >
+                {tab.title}
+              </button>
+            </div>
           ))}
         </div>
-
         <div>{tabs[activeTab].content}</div>
       </div>
     </>
