@@ -1,8 +1,11 @@
 import { useSkillsHook } from "@hooks";
-import { Array } from "./Array";
 import { tool } from "@assets";
+import { NeonSVG } from "@subcomponentsG";
+import { Array } from "./Array";
+
 export const ToolsSkills = () => {
   const { tools } = useSkillsHook();
+  const color = "#e5802d";
   return (
     <>
       <article>
@@ -10,7 +13,7 @@ export const ToolsSkills = () => {
           Tools
         </h4>
         <figure>
-          <img src={tool} alt="Tool" className="mx-auto w-24 mb-8" />
+          <NeonSVG src={tool} alt="Tools" color={color} />
         </figure>
         <div
           className="grid w-80 space-x-3 -mr-2 -pl-3
@@ -27,7 +30,7 @@ export const ToolsSkills = () => {
               <figure>
                 <img
                   src={item.image}
-                  alt=""
+                  alt={item.alt}
                   className="w-5 mt-[0.1rem] md:mt-[0.4rem] mr-0.5"
                 />{" "}
               </figure>

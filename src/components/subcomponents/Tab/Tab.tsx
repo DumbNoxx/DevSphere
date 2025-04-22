@@ -8,8 +8,8 @@ export const Tab = ({ config }: PropsTabs) => {
 
   return (
     <>
-      <div>
-        <div className="flex space-x-2 mb-4 justify-center">
+      <div className="border rounded-3xl p-4 pb-8">
+        <div className="flex space-x-9 mb-4 justify-center">
           {tabs.map((tab, i) => (
             <button
               key={i}

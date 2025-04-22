@@ -18,6 +18,7 @@ export const backendList: Skill[] = [
     image: python,
     colors: "hover:bg-yellow-300",
     textColor: "hover:text-black",
+    alt: "Python Language",
   },
   /**
    * Flask skill details.
@@ -29,6 +30,7 @@ export const backendList: Skill[] = [
     image: flask,
     colors: "hover:bg-gray-400",
     textColor: "hover:text-black",
+    alt: "Flask Backend",
   },
   /**
    * FastAPI skill details.
@@ -40,6 +42,7 @@ export const backendList: Skill[] = [
     image: fastAPI,
     colors: "hover:bg-emerald-400",
     textColor: "hover:text-black",
+    alt: "FastAPI Backend",
   },
   /**
    * Node.js skill details.
@@ -50,6 +53,7 @@ export const backendList: Skill[] = [
     name: "Node JS",
     image: nodejs,
     colors: "hover:bg-emerald-900",
+    alt: "NodeJS Backend Javascript",
   },
   /**
    * Express.js skill details.
@@ -61,6 +65,7 @@ export const backendList: Skill[] = [
     image: express,
     colors: "hover:bg-stone-600",
     textColor: "hover:text-white",
+    alt: "Express JS Servers Backend Javascript",
   },
   /**
    * PostgreSQL skill details.
@@ -71,5 +76,6 @@ export const backendList: Skill[] = [
     name: "PostgreSQL",
     image: postgreSQL,
     colors: "hover:bg-slate-900",
+    alt: "SQL DataBase",
   },
 ];

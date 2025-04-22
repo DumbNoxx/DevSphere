@@ -1,9 +1,11 @@
 import { useSkillsHook } from "@hooks";
-import { Array } from "./Array";
 import { front } from "@assets";
+import { NeonSVG } from "@subcomponentsG";
+import { Array } from "./Array";
 
 export const FrontendSkills = () => {
   const { frontend } = useSkillsHook();
+  const color = "#39ff14";
 
   return (
     <>
@@ -12,7 +14,7 @@ export const FrontendSkills = () => {
           Frontend Stack
         </h4>
         <figure>
-          <img src={front} alt="Frontend" className="mx-auto w-24 mb-8" />
+          <NeonSVG src={front} alt="Frontend" color={color} />
         </figure>
         <div
           className="grid grid-cols-3 w-80 space-x-3 -mr-2 -pl-3 sm:grid-cols-4
@@ -29,7 +31,7 @@ export const FrontendSkills = () => {
               <figure>
                 <img
                   src={item.image}
-                  alt=""
+                  alt={item.alt}
                   className="w-5 mt-[0.1rem] md:mt-[0.4rem] mr-0.5"
                 />{" "}
               </figure>

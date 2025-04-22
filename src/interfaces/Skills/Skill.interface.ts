@@ -4,4 +4,5 @@ export interface Skill {
   image: string;
   colors: string;
   textColor?: string;
+  alt: string;
 }

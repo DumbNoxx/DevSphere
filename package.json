@@ -13,6 +13,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.0.13",
     "animejs": "^4.0.1",
+    "framer-motion": "^12.7.4",
     "i18next": "^25.0.0",
     "lucide-react": "^0.479.0",
     "react": "^19.0.0",

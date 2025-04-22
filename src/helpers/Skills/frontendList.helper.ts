@@ -18,6 +18,7 @@ export const frontendList: Skill[] = [
     image: html,
     colors: "hover:bg-orange-400",
     textColor: "hover:text-black",
+    alt: "HTML5 Web",
   },
   /**
    * CSS skill.
@@ -29,6 +30,7 @@ export const frontendList: Skill[] = [
     image: css,
     colors: "hover:bg-sky-700",
     textColor: "hover:text-black",
+    alt: "CSS Styles Website",
   },
   /**
    * JavaScript skill.
@@ -40,6 +42,7 @@ export const frontendList: Skill[] = [
     image: js,
     colors: "hover:bg-yellow-300",
     textColor: "hover:text-black",
+    alt: "JavaScript Programming Language",
   },
   /**
    * TypeScript skill.
@@ -50,6 +53,7 @@ export const frontendList: Skill[] = [
     name: "TypeScript",
     image: ts,
     colors: "hover:bg-cyan-950",
+    alt: "TypeScript Type checker",
   },
   /**
    * React JS skill.
@@ -60,6 +64,7 @@ export const frontendList: Skill[] = [
     name: "React JS",
     image: react,
     colors: "hover:bg-sky-800",
+    alt: "React JS Framework JavaScript",
   },
   /**
    * Tailwind CSS skill.
@@ -71,5 +76,6 @@ export const frontendList: Skill[] = [
     image: tailwind,
     colors: "hover:bg-emerald-300",
     textColor: "hover:text-black",
+    alt: "Tailwind CSS framework css",
   },
 ];

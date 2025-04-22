@@ -16,6 +16,7 @@ export const toolsList: Skill[] = [
     image: git,
     colors: "hover:bg-orange-300",
     textColor: "hover:text-black",
+    alt: "Git Control version",
   },
   /**
    * @type {Skill}
@@ -25,5 +26,6 @@ export const toolsList: Skill[] = [
     name: "Bash",
     image: bash,
     colors: "hover:bg-slate-500",
+    alt: "Bash Script terminal",
   },
 ];

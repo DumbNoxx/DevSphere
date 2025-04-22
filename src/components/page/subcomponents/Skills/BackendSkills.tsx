@@ -1,9 +1,11 @@
 import { useSkillsHook } from "@hooks";
-import { Array } from "./Array";
 import { back } from "@assets";
+import { NeonSVG } from "@subcomponentsG";
+import { Array } from "./Array";
 
 export const BackendSkills = () => {
   const { backend } = useSkillsHook();
+  const color = "#6e55b2";
   return (
     <>
       <article>
@@ -11,7 +13,7 @@ export const BackendSkills = () => {
           Backend Stack
         </h4>
         <figure>
-          <img src={back} alt="Backend" className="mx-auto w-24 mb-8" />
+          <NeonSVG src={back} alt="Backend" color={color} />
         </figure>
         <div
           className="grid grid-cols-3 w-80 space-x-3 -mr-2 -pl-3 sm:grid-cols-4
@@ -28,7 +30,7 @@ export const BackendSkills = () => {
               <figure>
                 <img
                   src={item.image}
-                  alt=""
+                  alt={item.alt}
                   className="w-5 mt-[0.1rem] md:mt-[0.4rem] mr-0.5"
                 />{" "}
               </figure>
